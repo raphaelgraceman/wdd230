@@ -29,7 +29,6 @@ img {
 }
 
 nav {
-    display: block;
     background-color: black;
     padding-top: 20px;
 }
@@ -49,7 +48,7 @@ nav a:hover {
 }
 
 nav .active:hover {
-    background-color: aqua;
+    background-color: rgb(75, 87, 87);
     transition: 0.5s;
 }
 main{
