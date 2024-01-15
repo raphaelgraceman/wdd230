@@ -13,7 +13,6 @@ body {
 header {
     display: flex;
     background-color: rgb(42, 57, 138);
-    gap: 40px;
     color: white;
 }
 h1 {
@@ -55,6 +54,7 @@ main{
     margin-right: 2%;
     margin-left: 2%;
     color: black;
+    background-color: rgb(205, 108, 108);
 }
 h2, h3{
     border-bottom: 1.5px solid #fefcfc;
