@@ -15,12 +15,18 @@ header {
     background-color: rgb(42, 57, 138);
     color: white;
 }
+
+#headline {
+    justify-content: center;
+}
 h1 {
     font-size: 1rem;
     padding: 1px;
     margin-top: 30px;
 }
 img {
+    margin-left: 20px;
+    margin-right: 15px;
     border-radius: 15px;
     margin-left: 10px;
     /*box-shadow: 10px 0px 30px #c4c4c4;*/
