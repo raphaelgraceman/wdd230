@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-width: 640px){
+    header {
+        display: flex;
+        gap: 100px;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding: 2px;
+    }
+
+    #navigation {
+        display: flex;
+    }
+}

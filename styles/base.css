@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(133, 75, 112);
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: black;
+}
+header {
+    display: flex;
+    background-color: rgb(42, 57, 138);
+    gap: 40px;
+    color: white;
+}
+h1 {
+    font-size: 1rem;
+    padding: 1px;
+    margin-top: 30px;
+}
+img {
+    border-radius: 15px;
+    margin-left: 10px;
+    /*box-shadow: 10px 0px 30px #c4c4c4;*/
+
+}
+
+nav {
+    display: block;
+    background-color: black;
+    padding-top: 20px;
+}
+nav ul {
+    list-style-type: none;
+}
+nav a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: aliceblue;
+}
+
+nav .active:hover {
+    background-color: aqua;
+    transition: 0.5s;
+}
+main{
+    margin-right: 2%;
+    margin-left: 2%;
+    color: black;
+}
+h2, h3{
+    border-bottom: 1.5px solid #fefcfc;
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+}
+
+h3 {
+    background-color:  rgb(42, 57, 138);
+}
+
+.card {
+    border-bottom: 1px solid #e7c5c5;
+    border-left: 1px solid #e7c5c5;
+    border-right: 1px solid #e7c5c5;
+}
+.card ul,p {
+    margin-left: 20px;
+    line-height: 30px;
+}
+.card a{
+    color: black;
+}
+
+footer{
+    margin-top: 10px;
+    background-color:  rgb(42, 57, 138);
+    color: white;
+    text-align: center;
+}
+
