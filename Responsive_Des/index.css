@@ -1,39 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    background-color: rgb(255, 255, 255);
-    color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 1%;
-    margin-right: 1%;
-    color: black;
-}
-header {
-    background-color: rgb(0, 166, 97);
-    color: white;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-}
-
-#logo_brand_name img {
-    width: 60px;
-    height: 66px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 15px;
-    margin-top: 10px;
-}
-.social_links a img {
-    width: 32px;
-    height: 26px;
-    border-radius: 3rem;
-    margin-top: 10px;
-}
-
-/*Hamburger styling */
 #menu {
     display: block;
     font-size: 2rem;
@@ -86,4 +51,21 @@ nav {background-color: tomato;
 }
 #menu.show::before {
     content: "X";
+}
+
+@media only screen and (min-width: 48em) {
+    .navigation{
+        display: flex;
+    }
+    .navigation li {
+        display: block; /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+    #menu {
+        display: none;
+    }
 }
