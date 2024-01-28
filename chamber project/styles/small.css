@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color:  rgba(255, 94, 0, 0.367);
     color: antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 1%;
@@ -12,12 +12,16 @@ body {
     color: black;
 }
 header {
-    background-color: rgb(0, 166, 97);
+    background-color:rgb(57, 58, 65);
     color: white;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    
 }
 
+#logo_brand_name {
+    display: flex;
+}
 #logo_brand_name img {
     width: 60px;
     height: 66px;
@@ -26,11 +30,12 @@ header {
     border-radius: 15px;
     margin-top: 10px;
 }
-.social_links a img {
-    width: 32px;
-    height: 26px;
-    border-radius: 3rem;
+.brandHead {
+    font-size: 18px;
     margin-top: 10px;
+}
+.social_links  {
+   display: none;
 }
 
 /*Hamburger styling */
@@ -46,6 +51,7 @@ header {
 }
 #hamburger_container {
    margin-left: 75%;
+   margin-top: -20px;
 }
 
 #menu::before {
@@ -86,4 +92,207 @@ nav {background-color: tomato;
 }
 #menu.show::before {
     content: "X";
+}
+#currentdate {
+    display: block;
+    grid-column: 1/4;
+    grid-row: 3;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold; 
+    margin-bottom: 35px;
+    margin-top: 3px;
+    border-radius: 15px;
+}
+/* Main styling */
+#hero-image img {
+    width: 100%;
+    height: 100%;
+}
+
+#temple h4{
+    position: absolute;
+    color: white;
+    margin-top: 5px;
+    margin-left: 20%;
+}
+
+#head-items {
+    display: flex;
+    border: 2px solid #1234;
+}
+
+#links {
+    display: none;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+h3 {
+    text-align: center;
+    color: rgb(255, 153, 0);
+    background-color: #000;
+}
+#business-image h4{
+    margin-left: 5%;
+    margin-top: 4%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+}
+#business-image {
+    grid-column: 1/3;
+    border: 2px solid #1234;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#business-image img{
+    width: 100%;
+    height: 100%;
+}
+#weather {
+    grid-column: 3;
+    grid-row: 1;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border: 2px solid #1234;
+}
+#weather h4, #sportlight-1 h4, #news h4, 
+#join h4, #sportlight-2 h4 {
+    color: rgb(255, 153, 0);
+    background-color: #000;
+}
+#hero-image {
+    grid-column: 1/4;
+    grid-row: 2;
+    border: 2px solid #1234;
+    margin-bottom: 10px;
+}
+#news {
+    grid-column: 1/4;
+    grid-row: 3;
+    border: 2px solid #1234;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color:  #478;
+    color: white;
+}
+#odusec {
+    grid-column: 1/4;
+    grid-row: 4;
+}
+#odusec img{
+    width: 100%;
+}
+#sportlight-1 {
+    grid-column: 1/4;
+    grid-row: 5;
+    border: 2px solid #1234;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+#sportlight-cover img {
+    width: 100%;
+}
+#section-G {
+    margin-bottom: 100px;
+}
+#sportlight-2 {
+    display: none;
+}
+#join{
+    display: none;
+}
+
+/* copied from main */
+footer {
+    background-color: white;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    width: 100%;
+}
+#section-G {
+    margin-top: 100px;
+    border-radius: 15px;
+}
+.brandHead {
+font-size: 10px;
+}
+#logo-footer {
+    display: flex;
+    border: 2px solid #1234;
+    margin-top: 20px;
+    background-color:rgb(57, 58, 65);
+    color: white;
+    padding: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+#logo-footer img {
+    width: 50px;
+    height: 45px;
+    margin-left: 2px;
+    margin-right: 3px;
+    border-radius: 15px;
+}
+#contactDetail{
+    margin-left: 10%;
+}
+#map {
+    margin-left: 5%;
+}
+#map img {
+    width: 33px;
+    height: 34px;
+    margin-top: 15px;
+}
+#email {
+    color: yellow;
+}
+#call-us-now a{ 
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    background-color: yellow;
+}
+
+#address {
+    display: none;
+}
+#footer-nav {
+    display: flex;
+    border: 2px solid #1234;
+    gap: 50px;
+    background-color: #478;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+#footer-nav p {
+    margin-top: 15px;
+}
+#copyright{
+    margin-top: 15px;
+    margin-left: 2px;
+    margin-right: 2%;
+}
+#footing-links {
+    color: white;
+}
+#footing-links nav{
+    display: flex;
+    padding: .5px;
+    background-color: #478;
+}
+#lastModified {
+    margin-left: 5%;
+    color: white;
+    margin-top: 15px;
 }
