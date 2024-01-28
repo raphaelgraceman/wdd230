@@ -112,4 +112,11 @@
         margin-bottom: 35px;
         
     }
+    /*Main Styling*/
+    #hero-image img {
+        width: 100%;
+    } 
+    #hero-image picture h2 {
+        position: relative;
+    }
 }
