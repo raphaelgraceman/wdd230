@@ -30,7 +30,7 @@ header {
     border-radius: 15px;
     margin-top: 10px;
 }
-.brandHead {
+#logo_brand_name .brandHead {
     font-size: 18px;
     margin-top: 10px;
 }
