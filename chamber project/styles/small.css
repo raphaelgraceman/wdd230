@@ -199,7 +199,8 @@ h3 {
     width: 100%;
 }
 #section-G {
-    margin-bottom: 100px;
+    margin-bottom: 1px;
+    border-radius: 15px;
 }
 #sportlight-2 {
     display: none;
@@ -216,17 +217,13 @@ footer {
     border-left: 5px solid black;
     width: 100%;
 }
-#section-G {
-    margin-top: 100px;
-    border-radius: 15px;
-}
+
 .brandHead {
 font-size: 10px;
 }
 #logo-footer {
     display: flex;
     border: 2px solid #1234;
-    margin-top: 20px;
     background-color:rgb(57, 58, 65);
     color: white;
     padding: 2px;
