@@ -75,9 +75,11 @@
         text-align: center;
         color: #ffffff;
         text-decoration: #2b1c10;
-        opacity: .6;
+        transition: .5s;
+         opacity: .9;
         transform: scale(1.1);
         box-shadow: 10px 5px 15px #ffffff;
+        border-radius: 15px;
     }
     
       nav a:hover{
@@ -95,15 +97,26 @@
        
     .navigation{
         display: flex;
+        gap: 20px;
     }
     .navigation li {
-        display: block; /* change state in small view */
-        flex: 1 1 100%;
+        display: block; 
+    
     }
 
     .navigation a {
         text-align: center;
     }
+    nav .active:hover {
+        background-color: black;
+    }
+    nav a:hover{
+        border: 1px solid rgb(45, 53, 60);
+        color: rgb(0, 0, 0);
+        padding: 2px;
+        border-radius: 5px; 
+    }
+  
     #menu {
         display: none;
     }

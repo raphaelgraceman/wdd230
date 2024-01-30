@@ -27,8 +27,7 @@
         border: 1px solid rgb(45, 53, 60);
         color: rgb(0, 0, 0);
         padding: 2px;
-        border-radius: 5px;
-        
+        border-radius: 5px; 
     }
     nav .active:hover {
         background-color: black;
