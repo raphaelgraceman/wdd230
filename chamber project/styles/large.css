@@ -12,6 +12,8 @@
     margin-right: 1%;
     color: black;
     height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
     }
     header {
         background-color:rgb(57, 58, 65);
@@ -255,7 +257,9 @@
         border-bottom: 5px solid black;
         border-right: 10px solid black;
         border-left: 10px solid black;
+        padding: .2rem;
     }
+       
    #section-G {
         margin-top: 1px;
         border-radius: 15px;
@@ -267,6 +271,8 @@
         display: flex;
         border: 2px solid #1234;
         margin-top: 20px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         background-color:rgb(57, 58, 65);
         color: white;
         padding: 2px;
@@ -336,4 +342,22 @@
         color: white;
         margin-top: 15px;
     }
+    
+    main img {
+        float: right;
+        margin: 0 0 1rem 1rem;
+        border: 1px solid #333;
+        box-shadow: 0 0 15px #777;
+    }
+    
+    #mode {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 3rem;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    
+    
 }
