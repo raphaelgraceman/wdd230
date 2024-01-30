@@ -9,11 +9,18 @@
         font-size: 2.5rem;
         padding: 2px;
     }
-    .active {
+   
+    .navigation {
         display: flex;
         gap: 30px;
-        margin-left: 30%;
-        margin-right: 30%;
+        margin-left: 25%;
+        margin-right: 15%;
+    }
+    .navigation li {
+        display: block;
+    }
+    #menu {
+        display: none;
     }
     
     nav a:hover{
@@ -31,6 +38,23 @@
         grid-template-columns: 1fr, 1fr;
         gap: 20px;
     }
+    main img {
+        float: right;
+        margin: 0 0 1rem 1rem;
+        border: 1px solid #333;
+        box-shadow: 0 0 15px #777;
+    }
+    
+    #mode {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 3rem;
+        cursor: pointer;
+        font-size: 2rem;
+        margin-right: 60px;
+    }
+    
     .card {
         border-bottom: 1px solid #e7c5c5;
         border-left: 1px solid #e7c5c5;

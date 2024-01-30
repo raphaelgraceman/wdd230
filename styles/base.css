@@ -15,6 +15,22 @@ header {
     background-color: rgb(42, 57, 138);
     color: white;
 }
+main img {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    border: 1px solid #333;
+    box-shadow: 0 0 15px #777;
+}
+
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
 
 #headline {
     justify-content: center;
@@ -34,7 +50,6 @@ img {
 }
 
 nav {
-    background-color: black;
     padding-top: 20px;
 }
 nav ul {
@@ -55,6 +70,56 @@ nav a:hover {
 nav .active:hover {
     background-color: rgb(75, 87, 87);
     transition: 0.5s;
+}
+/*Hamburger styling */
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 7000;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    text-align: right;
+}
+#hamburger_container {
+   margin-left: 75%;
+   margin-top: -20px;
+}
+
+#menu::before {
+    content: "☰";
+
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 76opx;
+   
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    justify-content: right;
+}
+
+.navigation a:hover, .navigation a:active {
+    color: white;
+    background-color: black;
+}
+.show li {
+    display: block;
+}
+#menu.show::before {
+    content: "X";
 }
 main{
     margin-right: 2%;
