@@ -30,6 +30,7 @@ document.getElementById("currentyear").textContent = year;
 const currentdate = "     " + dayName + ", " + todaysdate.getDate() + " " + monthName + ", " + todaysdate.getFullYear();
 
 document.getElementById("currentdate").textContent = currentdate;
+document.getElementById("lastModified").textContent = currentdate;
 
 //Toggle Dark Mode 
 const modeButton = document.querySelector("#mode");

@@ -283,7 +283,8 @@
         border-radius: 15px;
    }
    .brandHead {
-    font-size: 10px;
+    font-size: 16px;
+    margin-top: 15px;
    }
     #logo-footer {
         display: flex;
@@ -298,8 +299,8 @@
         margin-left: 5px;
     }
     #logo-footer img {
-        width: 60px;
-        height: 66px;
+        width: 48px;
+        height: 53px;
         margin-left: 10px;
         margin-right: 10px;
         border-radius: 15px;
@@ -308,6 +309,7 @@
         margin-left: 20%;
     }
     #map {
+        display: block;
         margin-left: 15%;
     }
     #map img {
@@ -317,6 +319,7 @@
     }
     #email {
         color: yellow;
+        font-size: 16px;
     }
     #call-us-now a{ 
         color: rgb(0, 0, 0);
@@ -326,6 +329,17 @@
         text-decoration: none;
         transition: 0.5s ease-in-out;
         background-color: yellow;
+    }
+    #call-us-now a:hover {
+        text-align: center;
+        transition: .5s;
+        transform: scale(1.1);
+        box-shadow: 10px 5px 15px #ffffff;
+        border-radius: 15px;
+    }
+    #call-us-now a:hover{
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
     }
    
     #address {
@@ -349,16 +363,21 @@
     }
     #footing-links {
         color: white;
+        margin-left: 1%;
+    }
+    #class {
+        display: block;
     }
     #footing-links nav{
         display: flex;
         padding: .5px;
         background-color: #478;
+        opacity: .3;
     }
     #lastModified {
-        margin-left: 20% auto;
         color: white;
         margin-top: 15px;
+        position: absolute;
     }
     
    
