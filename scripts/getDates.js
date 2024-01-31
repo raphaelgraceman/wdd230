@@ -11,7 +11,7 @@ currentYearElement.textContent = currentYear;
 
 
 //Get current Date
-let currentDateElement = document.getElementById("currentDate");
+let currentDateElement = document.getElementById("lastModified");
 currentDateElement.textContent = currenDate;
 
 

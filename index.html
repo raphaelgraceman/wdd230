@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Raphael - WDD 230 - Web Frontend Development">
     <meta name="description"
-    content="Raphael Dotse's Web Frontend Development is an assignment portal 
-    meant to host and display pages of completed weekly assignments.">
+    content="WDD 230 - Web Frontend Development course assignment portal is a page
+    meant to host and display pages of Raphael Dotse's weekly assignments.">
     <meta name="authur" content="Raphael Dotse">
 
     <link rel="stylesheet" href="styles/base.css">
@@ -19,13 +19,12 @@
     <title>Raphael - WDD 230 - Web Frontend Development</title>
 </head>
 <body>
-   
     <header id="headline">
         <div id="mode">
             🕶️
         </div>
         <img src="images/Raphael_fb.jpg" alt="Ralph's facebook logo">
-        <h1>Raphael Dotse</h1>
+        <span>Raphael Dotse</span>
     </header>
     <div id="hamburger_container">
         <button id="menu"></button>
@@ -39,34 +38,36 @@
         </ul>
     </nav>
     <main>
-        <h2>WDD 230: Web Frontend Development</h2>
-        <section class="card" id="card-1">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li><a href="week1/holygrail.html">Week 01</a><span class="divider">|</span>
-                    <a id="sublinks" href="week1/wireframe.html">Wireframe</a>
-                    <span class="divider">|</span>
-                    <a href="week1/siteplan.html" id="sublink">Site Plan</a></li>
-                <li><a href="#">Week 02 </a> 
-                    <span class="divider">|</span>
-                    <a href="chamber project/index.html" id="sublink">Chamber</a></li>
-                <li><a href="#">Week 03</a>
-                    <a href="/chamber project/images/Landscape_resized.webp">WebP</a>
-                </li>
-                <li><a href="#">Week 04</a></li>
-                <li><a href="#">Week 05</a></li>
-                <li><a href="#">Week 06</a></li>
-                <li><a href="#">Week 07</a></li>
-
-            </ul>
-        </section>
-
-        <section class="card" id="card-2">
-            <h3>Information</h3>
-            <p>Weather: <span id="weather"></span><br>
-                <span>Number of visits to the site:</span>
-                <span id="visits"></span></p>
-        </section>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <div id="container">
+            <section class="card" id="card-1">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li><a href="week1/holygrail.html">Week 01</a><span class="divider">|</span>
+                        <a id="sublinks" href="week1/wireframe.html">Wireframe</a>
+                        <span class="divider">|</span>
+                        <a href="week1/siteplan.html" id="sublink">Site Plan</a></li>
+                    <li><a href="#">Week 02 </a> 
+                        <span class="divider">|</span>
+                        <a href="chamber project/index.html" id="sublink">Chamber</a></li>
+                    <li><a href="#">Week 03</a>
+                        <a href="/chamber project/images/Landscape_resized.webp">WebP</a>
+                    </li>
+                    <li><a href="#">Week 04</a></li>
+                    <li><a href="#">Week 05</a></li>
+                    <li><a href="#">Week 06</a></li>
+                    <li><a href="#">Week 07</a></li>
+    
+                </ul>
+            </section>
+    
+            <section class="card" id="card-2">
+                <h2>Information</h2>
+                <p>Weather: <span id="weather"></span><br>
+                    <span>Number of visits to the site:</span>
+                    <span id="visits"></span></p>
+            </section>
+        </div>
     </main>
 
     <footer>
@@ -76,7 +77,7 @@
             <img src="images/flower.png" alt="flower"><br><span>Accra, Ghana</span>
             <span><img src="images/ghana flag.png" alt="Ghana Flag"></span>
         </p>
-        <p>Last Modification: <span id="currentDate"></span><span ></span></p>
+        <p>Last Modification: <span id="lastModified"></span><span ></span></p>
     </footer>
     <script src="scripts/getDates.js"></script>
 </body>

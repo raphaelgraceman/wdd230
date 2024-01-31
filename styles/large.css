@@ -8,6 +8,7 @@
     h1 {
         font-size: 2.5rem;
         padding: 2px;
+        text-align: center;
     }
    
     .navigation {
@@ -32,7 +33,7 @@
     nav .active:hover {
         background-color: black;
     }
-    main {
+    #container {
         display: grid;
         grid-template-columns: 1fr, 1fr;
         gap: 20px;
@@ -71,9 +72,7 @@
         grid-column: 3;
         grid-row: 2;
     }
-    h3 {
-        margin: 0;
-    }
+   
 
 
    

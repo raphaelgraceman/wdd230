@@ -127,14 +127,14 @@ main{
     color: black;
     background-color: rgb(205, 108, 108);
 }
-h2, h3{
+h1, h2{
     border-bottom: 1.5px solid #fefcfc;
     text-align: center;
     margin-top: 25px;
     color: white;
 }
 
-h3 {
+h2 {
     background-color:  rgb(42, 57, 138);
 }
 
