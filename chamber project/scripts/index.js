@@ -47,6 +47,8 @@ modeButton.addEventListener("click", () => {
 	}
 });
 
+
+
 //Map
 //let map;
 
