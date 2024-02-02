@@ -161,7 +161,7 @@
         grid-column: 1;
         grid-row: 2;
         border: 2px solid #1234;
-        margin-left: -20px;
+        margin-left: 0px;
         text-align: center;
         background-image: url(/images/Raphael_fb.jpg);
     }
@@ -180,12 +180,13 @@
         border: 2px solid #1234;
         background-color: black;
         text-align: center;
+        margin-top: 0;
     }
     #sportlight-cover {
         border: 2px solid rgb(255, 255, 255);
         background-color:  rgb(166, 123, 123);
         margin: 10px;
-        height: 95%;
+       
     }
    
     #sportlight-cover p {
