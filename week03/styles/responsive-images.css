@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+    font: Tapestary;
+    font-size: 45px;
+    height: 100px;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    transition: background-color 0.5s;
+}
+
+.hero:hover {
+    background-color: blueviolet;
+}
+
+body{
+    margin-left: 1%;
+}
+
+footer{
+    margin-top: 40px;
+    text-align: center;
+}
+h2{
+    padding: 5px;
+    border-bottom: .5px solid #6464;
+    border-style: outset;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(247, 240, 229);
+}
+
+#currentYear{
+    padding-right: 10px;
+}
+p{
+    margin-top: 20px;
+}

@@ -29,6 +29,7 @@
         margin-left: 10px;
         margin-right: 10px;
         border-radius: 15px;
+        cursor: pointer;
     }
     .social_links a img {
         width: 32px;

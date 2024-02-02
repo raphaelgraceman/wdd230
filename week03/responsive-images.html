@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Raphael - WDD 230 - Web Frontend Development">
+    <meta name="description"
+    content="WDD 230 - Web Frontend Development course assignment portal is a page
+    meant to host and display pages of Raphael Dotse's weekly assignments.">
+    <meta name="authur" content="Raphael Dotse">
+
+    <link rel="icon" href="/chamber/images/favicon.ico">
+
+    <meta property="og:image" content="https://www.shutterstock.com/image-vector/support-local-businesses-vintage-stamp-1878667084">
+    <meta property="og:url" content="https://web.facebook.com/profdotseraphael">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+   
+    <title>Raphael - WDD 230 - Web Frontend Development</title>
+</head>
+<body>
+    <header>
+        <h1><br>Responsive Images Illustrative Example</h1>
+    </header>
+   
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(min-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="hero image" width="1500" height="750" loading="lazy">
+            </picture>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h2><span id="currentYear">|</span>WDD 230 Course Practice Assignment</h2>
+            <p id="footing-p">Last Modification: <span id="lastModified"></span><span ></span></p>
+        </div>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+</body>
+</html>
