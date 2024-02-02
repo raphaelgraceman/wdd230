@@ -267,6 +267,9 @@
         border: 2px solid #1234;
         text-align: center;
     }
+    #sportlight-2 img {
+        width: 100%;
+    }
     #sportlight-2 button {
         border: none;
         background-color:   rgba(255, 94, 0, 0.367);
