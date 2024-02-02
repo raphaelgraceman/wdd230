@@ -44,7 +44,11 @@
         border: 1px solid #333;
         box-shadow: 0 0 15px #777;
     }
-    
+    #card-1 ul a{
+        color: rgb(1, 43, 43);
+        padding: 6px;
+    }
+   
     #mode {
         position: absolute;
         top: 1rem;
