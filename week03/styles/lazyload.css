@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    font-family: tapestry;
+    font-style: italic;
+    font: 22px;
+    background-color: black;
+    color: white;
+    height: 100px;
+    margin-left: 1%;
+}
+
+main {
+    background-color: honeydew;
+    margin-left: 1%;
+}
+section {
+    display: block;
+}
+
+#images img {
+    width: 100%;
+}
+img {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 100px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#footing-p{
+    margin-top: 10px;
+}
+#currentYear {
+    padding-right: 20px;
+}
+#lastModified{
+    padding: 15px;
+}
