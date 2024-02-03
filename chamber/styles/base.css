@@ -327,12 +327,26 @@ main img {
     margin: 10px;
     margin-right: 0;
 }
+#side {
+    padding: 3px;
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: 2px solid #786;
+    margin-bottom: 35px;
+    border-radius: 15px 120px;
+
+}
+#side p{
+    margin-top: 20px;
+}
 .discover-sidebar h2 {
     padding: 3px;
     background-color: #478;
     text-align: center;
     color: white;
 }
+
 #statistics{
     border: 1px solid #786;
     height: 250px;

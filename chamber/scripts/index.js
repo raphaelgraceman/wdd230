@@ -48,3 +48,30 @@ modeButton.addEventListener("click", () => {
 	}
 });
 
+// Check if there is a previous visit date in localStorage
+document.addEventListener("DOMContentLoaded", function() {
+	var lastVisit = localStorage.getItem("lastVisit");
+	var currentVisit = new Date(); // Current date and time
+  
+	if (lastVisit === null) {
+	  // First visit
+	  document.getElementById("visit").innerText = "Welcome! Let us know if you have any questions.";
+	} else {
+	  lastVisit = new Date(lastVisit);
+	  var timeDiff = currentVisit - lastVisit; // Time difference in milliseconds
+	  var daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24)); // Convert time difference to days
+  
+	  if (daysDiff < 1) {
+		// Less than a day
+		document.getElementById("visit").innerText = "Back so soon! Awesome!";
+	  } else {
+		// More than a day
+		var message = "You last visited " + daysDiff + " day" + (daysDiff === 1 ? "" : "s") + " ago.";
+		document.getElementById("visit").innerText = message;
+	  }
+	}
+  
+	// Update the last visit date in localStorage
+	localStorage.setItem("lastVisit", currentVisit);
+  });
+  
