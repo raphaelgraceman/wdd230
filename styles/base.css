@@ -169,3 +169,13 @@ footer{
     text-align: center;
 }
 
+#visit-parag {
+    font-style: italic;
+    font-size: 12px;
+}
+
+#visits {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px 90px;
+    padding: 5px;
+}

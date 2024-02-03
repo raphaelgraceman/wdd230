@@ -76,7 +76,18 @@
         grid-column: 3;
         grid-row: 2;
     }
-   
+    #visit-parag {
+        font-style: italic;
+        font-size: 22px;
+    }
+
+    #visits {
+        background-color: rgb(255, 255, 255);
+        border-radius: 15px 75px;
+        padding: 30px;
+        border-top: 5px solid rgb(0, 42, 255);
+        border-bottom: 10px solid rgb(25, 0, 255);
+    }
 
 
    
