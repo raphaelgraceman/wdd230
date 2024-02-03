@@ -315,3 +315,82 @@ main img {
     cursor: pointer;
     font-size: 2rem;
 }
+
+/* Discover Side Bar Design */
+.discover-container {
+    grid-template-columns: 1fr; /* Switch to a single column layout for mobile view */
+    border: 2px solid black;
+}
+
+.discover-sidebar{
+    background-color:  rgba(255, 192, 156, 0.367);
+    margin: 10px;
+    margin-right: 0;
+}
+.discover-sidebar h2 {
+    padding: 3px;
+    background-color: #478;
+    text-align: center;
+    color: white;
+}
+#statistics{
+    border: 1px solid #786;
+    height: 250px;
+    margin-bottom: 35px;
+    border-bottom-right-radius: 15px;
+}
+#statistics p {
+    text-align: center;
+    padding: 5px;
+}
+#disc-calendar{
+    border: 1px solid #786;
+    height: 360px;
+    margin-bottom: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#disc-event {
+    border: 1px solid #786;
+    height: 250px;
+    margin-bottom: 55px;
+    text-align: center;
+    border-bottom-right-radius: 15px;
+}
+#disc-event p{
+    color: rgb(0, 0, 0);
+    font: small;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: yellow;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-transform: capitalize;
+}
+.discover-main-content{
+    padding: 5px;
+}
+
+#content-section {
+    background-color: transparent;
+    margin: 10px;
+    margin-left: 0;
+}
+.section-images img{
+    width: 100%;
+    height: auto;
+}
+.section-images img:hover {
+    background-color: #000;
+    transition: 0.5s ease-out;
+}
+.section-images-design img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px 150px;
+}
+.section-images-fast img{
+    width: 100%;
+    height: auto;
+    border-radius: 315px 950px;
+}

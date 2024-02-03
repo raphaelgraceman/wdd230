@@ -396,5 +396,13 @@
         font-size: 2rem;
     }
     
-    
+    /* Side Bar CSS Design */
+    .discover-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr; /* Sidebar takes up 1 part, main content takes up 3 parts */
+        grid-gap: 20px; /* Add some space between the columns */
+    }
+
+ 
+      
 }
