@@ -1,0 +1,23 @@
+
+table {
+    border-collapse: collapse;
+    width: auto;
+}
+
+caption {
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid #bababa;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e6e6e6;
+}
