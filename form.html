@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Raphael - WDD 230 - Web Frontend Development">
+    <meta name="description"
+    content="WDD 230 - Web Frontend Development course assignment portal is a page
+    meant to host and display pages of Raphael Dotse's weekly assignments.">
+    <meta name="author" content="Raphael Dotse">
+
+    <link rel="icon" href="/chamber/images/favicon.ico">
+
+    <meta property="og:image" content="https://www.shutterstock.com/image-vector/support-local-businesses-vintage-stamp-1878667084">
+    <meta property="og:url" content="https://web.facebook.com/profdotseraphael">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+   
+    <title>Raphael - WDD 230 - Web Frontend Development</title>
+</head>
+<body>
+    <header id="headline">
+        <div id="mode">
+            🕶️
+        </div>
+        <img src="images/Raphael_fb.jpg" alt="Ralph's facebook logo" loading="lazy">
+        <span>Raphael Dotse</span>
+    </header>
+    <div id="hamburger_container">
+        <button id="menu"></button>
+    </div>
+    <nav>
+        <ul class="navigation">
+            <li ><a href="#">Home</a></li>
+            <li><a href="/chamber/index.html">Chamber</a></li>
+            <li><a href="/week1/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="week04/forms.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>WDD 230: Web Frontend Development <br> Team Form Practice Page</h1>
+       
+        <form method="get" action="record.html">
+            <fieldset>
+                <label id="user-name">Username*<input type="text" name="user-name" required></label>
+               
+                <label class="passWord" for="password">Password*</label>
+                <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" placeholder="Enter password - at least 8 char" required>
+                
+                <label class="passWord" for="password-conf">Confirm Password*</label>
+                <input type="password" id="password-conf" id="confirmPassword" name="confirm-password" placeholder="Confirm password" required>
+                
+
+                <label id="email">E-mail*<input name="email" placeholder="someone@gmail.com" required
+                    pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+                    <!--pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"    standard email pattern ---->
+
+                <div id="rating">
+                    <label for="r">Page Rating</label>
+                    <div id="rangevalue">0</div>
+                    <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist>
+                </div>
+            </fieldset>
+
+            <!--Submission Button-->
+            <input onclick="checkPassword()" id="submitBtn" type="submit" value="Submit">
+        </form>
+
+
+        <label id="page-rating">Rate Us</label>
+        <div class="stars">
+            <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+            <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+            <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+            <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+            <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span><br>
+            <img src="images/flower.png" alt="flower" loading="lazy">
+              <span>Raphael Dotse Graceman</span>
+            <img src="images/flower.png" alt="flower" loading="lazy"><br><span>Accra, Ghana</span>
+            <span><img src="images/ghana_flag.png" alt="Ghana Flag" loading="lazy"></span>
+        </p>
+        <p>Last Modification: <span id="lastModified"></span><span ></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/form.js"></script>
+    
+</body>
+</html>

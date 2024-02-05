@@ -1,0 +1,141 @@
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form label#user-name, form label[for="password"], label[for="password-conf"],
+form label#email {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+/* Style the password input field */
+form label#user-name input, form input[type="password"],
+form label#email input {
+    display: block;
+    font-size: 1rem;
+    border: 1px solid rgb(74, 75, 74);
+    border-radius: 10px;
+    padding: .75rem;
+    color: #252525;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgb(91, 86, 86); 
+}
+/* Style the password input field when it is focused */
+input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff; /* Change the border color when focused */
+  }
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+input::placeholder {
+	font-size: 13px;
+}
+
+
+/*----- SUBMIT ------*/
+form input#submitBtn {
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    cursor: pointer;
+}
+
+form input#submitBtn:hover {
+    background-color: antiquewhite;
+    border: 1px solid black;
+    color: black;
+}
+form label#user-name input, form input[type="password"],
+form label#email input:required {
+    border-left: red solid 6px;
+    background-color: #efdea3;
+}
+form label#user-name input:valid, form input:valid[type="password"],
+form label#email input:required:valid{
+    border-left: green solid 6px;
+    background-color: #efdea3;
+}
+
+/* ------ Page Rating --------*/
+#r {
+	width: 180px;
+	margin-bottom: 0;
+    
+}
+#rating {
+   display: block;
+    padding-top: 1rem;
+    font-size: .8rem;
+    padding: .75rem 0;
+}
+
+#rangevalue {
+	font-size: 1.5rem;
+	color: navy;
+   
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 0;
+	width: 200px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+
+/* stars */
+#page-rating{
+    padding: 2rem;
+}
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
