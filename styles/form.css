@@ -69,6 +69,22 @@ form label#email input:required:valid{
     background-color: #efdea3;
 }
 
+
+:root { --primary-color: #080808; --error-color: #ff3333; }
+
+label { color: var(--primary-color); font-weight: bold; }
+
+input:required { border: 1px solid var(--primary-color); }
+
+input:invalid { border: 1px solid var(--error-color); }
+
+input:valid { border: 1px solid var(--primary-color); }
+
+input[type="password"] { margin-top: 5px; }
+
+input[type="email"] { margin-top: 5px; }
+
+
 /* ------ Page Rating --------*/
 #r {
 	width: 180px;
