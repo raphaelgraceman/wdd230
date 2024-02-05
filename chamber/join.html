@@ -12,7 +12,7 @@
     <link rel="icon" href="images/favicon.ico">
 
     <meta property="og:title" content="Raphael Chamber of Commerce">
-    <meta property="og:type" content="Website">
+    <meta property="og:type" content="Website" />
     <meta property="og:description" content="Supporting local buinesses stand out in the competitive market">
     <meta property="og:image" content="https://www.linkedin.com/in/dotseraphael/overlay/background-image/">
     <meta property="og:url" content="https://web.facebook.com/profdotseraphael">
@@ -21,15 +21,18 @@
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="/week04/form.css">
+    <link rel="stylesheet" href="/week04/forms-large.css">
    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
    
-    <title>Raphael Chamber of Commerce</title>
+    <title>Raphael Chamber of Commerce and Discovery</title>
 </head>             
 <body>
+    
     <header id="headeritems">
         <div id="mode">
             🕶️
@@ -37,7 +40,7 @@
         <div class="headline">
             <div id="logo_brand_name">
                 <a href="index.html">
-                    <source media="(max-width: 500)" srcset="images/logo_75x75.png">
+                    <source media="(500)" srcset="images/logo_75x75.png">
                     <img src="images/logo_3_225x225.png" alt="Logo" loading="lazy">
                 </a>
                 <h1 class="brandHead">Graceman <br>Chamber of commerce</h1>
@@ -63,10 +66,10 @@
             </div>
             <nav>
                 <ul class="navigation">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">Directory</a></li>
                     <li><a href="discover.html">Discovery</a></li>
-                    <li><a href="join.html">Join</a></li>
+                    <li><a href="#">Join</a></li>
                 </ul>
             </nav>
             <div id="currentdate"></div>
@@ -75,67 +78,61 @@
     </header>
    
      <!--Main-->
-     <main>
-        <h3>Welcome To Graceman Chamber</h3>
-        <section>
-            <div id="hero-image">
-                <div id="temple">
-                    <h4>New Office Building</h4>
-                </div>
-                <source media="(max-width: 500)" srcset="images/utah-hero-small-s.webp">
-                <source media="(min-width: 1000)" srcset="images/utah-hero-medium-s.webp">
-                <img src="images/utah-hero-large-s.webp" alt="Hero Image" loading="lazy">
-            </div>
-            <div id="weather">
-                <h4>Weather</h4>
-            </div>
-            <div id="business-image">
-                <h4>Graceman's Library Centre</h4>
-                <img src="images/library.jpg" alt="Library Image" loading="lazy">
-            </div>
-            <div id="odusec">
-                <source media="(max-width: 500)" srcset="images/hero-crossover.webp">
-                <source media="(min-width: 1000)" srcset="images/hero-crossover-medium.webp">
-                <img src="images/hero-crossover-large.webp" alt="Cross Over Image" loading="lazy">
-            </div>
-            <div id="sportlight-1">
-                <div id="sportlight-cover">
-                    <h4>Sportlight 1 <br><span>Graceman Remedial Centre </span></h4>
-                    <p>We are for you!</p><br>
-                    <span id="moto"> <marquee><i>Your GRADE is our SUCCESS</i></marquee></span><br>
-                    <div class="contact-us">
-                        <span>graceman@gmail.com</span><br>
-                        <a>+(233) 546229003   |   <span>
-                            <a id="fb" href="https://web.facebook.com/profdotseraphael" target="_blank">Facebook</span></a>
-                    </div>
-                    <img id="elkanah" src="images/elkanah.jpg" alt="student photo" loading="lazy">
-                </div>
-                </div>
-            </div>
+     <main id="main">
+         
+        <div class="membership-benefits">
+            <h2 id="heading">Membership Level Benefits</h2>  
 
-            <!---News Letter-->
-            <div id="news">
-                <h4>News Letter</h4>
-                <marquee>Over 1000 entry level Young Local Enterpreneurs
-                    are reaching the highest proficiency in their various industries. <br><br>Enterpreneurs who joined within the last two months
-                    are enjoying bronze returns.<br><br> However, management is making provisions for the silver ranks too!</marquee>
-            </div>
+            <h3 class="h3-items">Basic Membership</h3> 
+            <ul class="ul-items"> 
+                <li>Access to member-only events</li> 
+                <li>10% discount on all events</li> 
+            </ul> 
 
-            <div id="join">
-                <h4>Subscription</h4>
-                <button><h5>Join</h5></button>
-                <p>Enjoy the exclusive offers with our team of expect. click the button 
-                    to join the chamber now. Remember it one time subscription at no fee. 
-                </p>
-            </div>
-            <div id="sportlight-2">
-                <h4>Sportlight 2</h4>
-                <p>click <span><button><a href="https://www.betpawa.com.gh/" target="_blank">here</a></button></span> to bet for the <span id="day"></span> winning draw toninght.</p>
-                <a href="https://www.betpawa.com.gh/" target="_blank">
-                    <img src="images/bet-image.jpg" alt="Bet Image" loading="lazy">
-                </a>
-            </div>
-        </section>
+            <h3 class="h3-items">Premium Membership</h3> 
+            <ul class="ul-items"> 
+                <li>Access to exclusive training sessions</li> 
+                <li>25% discount on all events</li> 
+                <li>Featured advertising on the home page</li> 
+            </ul> 
+
+            <h3 class="h3-items">Platinum Membership</h3> 
+            <ul class="ul-items"> 
+                <li>Priority access to special events</li> 
+                <li>50% discount on all events</li>
+                <li>Top advertising position on the home page</li> 
+            </ul> 
+        </div>
+
+        <div class="membership-form"> 
+        <!---Form -->
+            <form method="get" action="thankyou.html" >
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <label class="top">First Name*<input type="text" name="fname" required></label>
+                    <label class="top">Last Name*<input type="text" name="lname" required></label>
+                    <label class="top">Title or Position<input type="text" name="title" ></label>
+                    <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">Phone <input type="tel" name="phone" placeholder="0546229003"></label>
+                    <label class="top">Business /Organization's name<input type="text" name="business" required></label>
+                    <label class="top">Website <input type="url" name="url" placeholder="https//"></label>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <div>Audience</div>
+                    <label class="sbs"><input type="radio" name="membership" value="nonprofit">Non-Profit</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver">Silver</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold">Gold</label>
+                    <label for="businessDescription">Description:</label> <textarea id="businessDescription" name="businessDescription"></textarea>
+                    <input type="hidden" name="timestamp" id="timestamp" value="">
+                </fieldset>
+
+                <!--Submission Button-->
+                <input id="submitBtn" type="submit" value="submit">
+            </form>
+        </div>
     </main>
 
     <!---Footer-->
@@ -180,5 +177,6 @@
         </div>
     </footer>
     <script src="scripts/index.js"></script>
+
 </body>
 </html>

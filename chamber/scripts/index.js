@@ -75,3 +75,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	localStorage.setItem("lastVisit", currentVisit);
   });
   
+
+  //Timestamp
+  document.getElementById('timestamp').value = new Date().toISOString();
