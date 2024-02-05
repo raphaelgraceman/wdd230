@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="forms-large.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,48 +15,48 @@
         <form method="get" action="thanks.html" >
             <fieldset>
                 <legend>Personal Info</legend>
-                <label>First Name* <input class="top" type="text" name="fname" required></label>
-                <label>Last Name* <input class="top" type="text" name="lname" required></label>
-                <label>Phone* <input class="top" type="tel" name="phone" placeholder="0546229003" required></label>
-                <label>Email <input class="top" type="email" name="email" placeholder="someone@gmail.com"></label>
-                <label>Website <input class="top" type="url" name="url" placeholder="https//"></label>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="0546229003"></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Website <input type="url" name="url" placeholder="https//"></label>
             </fieldset>
 
             <fieldset>
                 <legend>Course Information</legend>
                 <div>Audience</div>
-                <label><input class="sbs" type="radio" name="audience" value="beiginner">Beginner</label>
-                <label><input class="sbs" type="radio" name="audience" value="intermediate">Intermediate</label>
-                <label><input class="sbs" type="radio" name="audience" value="advance">Advance</label>
+                <label class="sbs"><input type="radio" name="audience" value="beiginner">Beginner</label>
+                <label class="sbs"><input type="radio" name="audience" value="intermediate">Intermediate</label>
+                <label class="sbs"><input type="radio" name="audience" value="advance">Advance</label>
 
                 <div>Software Needed</div>
-                <label><input type="checkbox" class="sbs" name="editing" value="yes">Photo Editing</label>
-                <label><input type="checkbox" class="sbs" name="code" value="yes">Coding</label>
-                <label><input class="sbs" type="checkbox" name="viedo" value="yes">Video Editing</label>
-                <label><input class="sbs" type="checkbox" name="art" value="yes">Arting</label>
+                <label class="sbs"><input type="checkbox" class="sbs" name="editing" value="yes">Photo Editing</label>
+                <label class="sbs"><input type="checkbox" class="sbs" name="code" value="yes">Coding</label>
+                <label class="sbs"><input class="sbs" type="checkbox" name="viedo" value="yes">Video Editing</label>
+                <label class="sbs"><input class="sbs" type="checkbox" name="art" value="yes">Arting</label>
             </fieldset>
 
             <fieldset>
                 <legend>Funding</legend>
-                <label>Anticipated Completion Date <input class="top" type="date" name="completionDate"></label>
+                <label class="top">Anticipated Completion Date <input type="date" name="completionDate"></label>
                 <!--Creating a drop down form list-->
-                <label>Course Subject
-                    <select class="top" name="subject">
-                    <option id="select" value="Please select" &#9662;></option>
-                    <option class="top" value="creative">Creative Ats & Development</option>
-                    <option class="top" value="owop">Our World Our People</option>
-                    <option class="top" value="info">Information Technology</option>
-                    <option class="top" value="rme">Religious & Moral Education</option>
-                    <option class="top" value="pe">Physical Education</option>
-                    <option class="top" value="data">Data Development</option></select>
+                <label class="top">Course Subject
+                    <select name="subject">
+                    <option value="">Please select &#9662;</option>
+                    <option value="creative">Creative Ats & Development</option>
+                    <option value="owop">Our World Our People</option>
+                    <option value="info">Information Technology</option>
+                    <option value="rme">Religious & Moral Education</option>
+                    <option value="pe">Physical Education</option>
+                    <option value="data">Data Development</option></select>
                 </label>
 
                 <!--Creating Number Entry-->
-                <label>How many Courses <input class="top" type="number" name="courses"></label>
+                <label class="top">How many Courses <input type="number" name="courses"></label>
             </fieldset>
 
             <!--Submission Button-->
-            <input id="submitBtn" type="submit" name="Proposed my course">
+            <input id="submitBtn" type="submit" value="Proposed my course">
         </form>
     </main>
 </body>
