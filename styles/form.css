@@ -8,7 +8,7 @@ form label#user-name, form label[for="password"], label[for="password-conf"],
 form label#email {
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: #3f1208;
     font-size: .8rem;
 }
 /* Style the password input field */
