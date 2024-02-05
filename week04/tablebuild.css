@@ -21,3 +21,6 @@ th {
 tbody tr:nth-child(odd) {
     background-color: #e6e6e6;
 }
+
+
+input[type=text] {background-color: #efac3e;}
