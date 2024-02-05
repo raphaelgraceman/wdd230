@@ -9,6 +9,7 @@
         font-size: 2.5rem;
         padding: 2px;
         text-align: center;
+        color: #202020;
     }
    
     .navigation {
@@ -35,8 +36,9 @@
     }
     #container {
         display: grid;
-        grid-template-columns: 1fr, 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
+        width: 100%;
     }
     main img {
         float: right;
@@ -63,6 +65,9 @@
         border-bottom: 1px solid #e7c5c5;
         border-left: 1px solid #e7c5c5;
         border-right: 1px solid #e7c5c5;
+    }
+    .hero picture img{
+        width: 100%;
     }
     h2 {
         grid-column: 1/4;

@@ -7,7 +7,7 @@
     <meta name="description"
     content="WDD 230 - Web Frontend Development course assignment portal is a page
     meant to host and display pages of Raphael Dotse's weekly assignments.">
-    <meta name="authur" content="Raphael Dotse">
+    <meta name="author" content="Raphael Dotse">
 
     <link rel="icon" href="/chamber/images/favicon.ico">
 
@@ -46,6 +46,13 @@
     </nav>
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 500px)" srcset="/week03/images/hero-small.webp">
+                <source media="(min-width: 1000px)" srcset="/week03/images/hero-medium.webp">
+                <img src="/week03/images/hero-large.webp" alt="hero image" width="1500" height="750" loading="lazy">
+            </picture>
+        </div>
         <div id="container">
             <section class="card" id="card-1">
                 <h2>Learning Activities</h2>
@@ -53,16 +60,16 @@
                     <li><a href="week1/holygrail.html">Week 01</a><span class="divider">|</span>
                         <a id="sublinks" href="week1/wireframe.html">Wireframe</a>
                         <span class="divider">|</span>
-                        <a href="week1/chamber-site-plan.html" id="sublink"> Chamber Site Plan</a></li>
+                        <a href="week1/chamber-site-plan.html" class="sublink"> Chamber Site Plan</a></li>
                     <li><a href="#">Week 02 </a> 
                         <span class="divider">|</span>
-                        <a href="chamber/index.html" id="sublink">Chamber</a></li>
+                        <a href="chamber/index.html" class="sublink">Chamber</a></li>
                     <li><a href="#">Week 03</a>
                         <a href="week03/images/landscape-nice.webp">WebP</a>
                         <span class="divider">|</span>
-                        <a href="week03/lazyload.html" id="sublink"> lazyload</a>
+                        <a href="week03/lazyload.html" class="sublink"> lazyload</a>
                         <span class="divider">|</span>
-                        <a href="week03/responsive-images.html" id="sublink"> Responsive Image</a>
+                        <a href="week03/responsive-images.html" class="sublink"> Responsive Image</a>
                     </li>
                     <li><a href="#">Week 04</a>
                         <a href="week04/tablebuild.html" id="sublink">Tables</a>
@@ -84,11 +91,11 @@
     </main>
 
     <footer>
-        <p>&copy<span id="currentYear"></span><br>
+        <p>&copy;<span id="currentYear"></span><br>
             <img src="images/flower.png" alt="flower" loading="lazy">
               <span>Raphael Dotse Graceman</span>
             <img src="images/flower.png" alt="flower" loading="lazy"><br><span>Accra, Ghana</span>
-            <span><img src="images/ghana flag.png" alt="Ghana Flag" loading="lazy"></span>
+            <span><img src="images/ghana_flag.png" alt="Ghana Flag" loading="lazy"></span>
         </p>
         <p>Last Modification: <span id="lastModified"></span><span ></span></p>
     </footer>
