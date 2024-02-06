@@ -7,12 +7,12 @@
     <meta name="description"
     content="Raphael Dotse's Web Frontend Development is an assignment portal 
     meant to host and display pages of completed weekly assignments.">
-    <meta name="authur" content="Raphael Dotse">
+    <meta name="author" content="Raphael Dotse">
 
     <link rel="icon" href="images/favicon.ico">
 
     <meta property="og:title" content="Raphael Chamber of Commerce">
-    <meta property="og:type" content="Website" />
+    <meta property="og:type" content="Website">
     <meta property="og:description" content="Supporting local buinesses stand out in the competitive market">
     <meta property="og:image" content="https://www.linkedin.com/in/dotseraphael/overlay/background-image/">
     <meta property="og:url" content="https://web.facebook.com/profdotseraphael">
@@ -109,22 +109,22 @@
             <form method="get" action="thankyou.html" >
                 <fieldset>
                     <legend>Personal Info</legend>
-                    <label class="top">First Name*<input type="text" name="fname" required></label>
-                    <label class="top">Last Name*<input type="text" name="lname" required></label>
-                    <label class="top">Title or Position<input type="text" name="title" ></label>
-                    <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                    <label class="top">Phone <input type="tel" name="phone" placeholder="0546229003"></label>
-                    <label class="top">Business /Organization's name<input type="text" name="business" required></label>
-                    <label class="top">Website <input type="url" name="url" placeholder="https//"></label>
+                    <label class="top">First Name*<input type="text" name="fname" required id="firstName"></label>
+                    <label class="top">Last Name*<input type="text" name="lname" required id="lastName"></label>
+                    <label class="top">Title or Position<input type="text" name="title" id="title"></label>
+                    <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required id="e-mail"></label>
+                    <label class="top">Phone <input type="tel" name="phone" placeholder="0546229003" id="phone"></label>
+                    <label class="top">Business /Organization's name<input type="text" name="business" required id="buinessesName"></label>
+                    <label class="top">Website <input type="url" name="url" placeholder="https//" id="website"></label>
                 </fieldset>
             
                 <fieldset>
                     <legend>Membership Level</legend>
                     <div>Audience</div>
-                    <label class="sbs"><input type="radio" name="membership" value="nonprofit">Non-Profit</label>
-                    <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership</label>
-                    <label class="sbs"><input type="radio" name="membership" value="silver">Silver</label>
-                    <label class="sbs"><input type="radio" name="membership" value="gold">Gold</label>
+                    <label class="sbs"><input type="radio" name="membership" value="nonprofit" id="non-profit">Non-Profit</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze" id="bronze">Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver" id="silver">Silver</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold" id="gold">Gold</label>
                     <label for="businessDescription">Description:</label> <textarea id="businessDescription" name="businessDescription"></textarea>
                     <input type="hidden" name="timestamp" id="timestamp" value="">
                 </fieldset>

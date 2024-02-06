@@ -1,5 +1,23 @@
 
 @media (min-width: 640px){
+    #main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    
+    .membership-form {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 2%;
+    }
+    
+    .membership-benefits {
+        grid-column: 2;
+        grid-row: 1;
+        margin-left: 5%;
+        margin-right: 20%;
+    } 
     form label.sbs {
         padding: .4rem 0;
     }

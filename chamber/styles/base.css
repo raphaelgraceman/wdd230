@@ -264,7 +264,7 @@ font-size: 12px;
     display: none;
 }
 #class {
-    display: none;
+    font-size: 7px;
 }
 #footer-nav {
     display: flex;
@@ -407,28 +407,22 @@ main img {
 
 
 /* JOIN */
-#main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-}
+
 
 .membership-form {
-    grid-column: 1;
-    grid-row: 1;
     margin: 2%;
 }
 
 .membership-benefits {
-    grid-column: 2;
-    grid-row: 1;
     margin-left: 5%;
     margin-right: 20%;
 } 
 #heading {
-    margin-top: 50px;
-    margin-bottom: -10px;
+   margin-top: 50px;
+   margin-bottom: -10px;
    text-align: center;
+   color: black;
+   text-decoration: underline;
 }
 .h3-items {
     padding: 10px;
@@ -438,4 +432,5 @@ main img {
 .ul-items li {
     padding: 10px;
     margin-left: 20%;
+    color: black;
 }

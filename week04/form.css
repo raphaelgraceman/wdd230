@@ -26,6 +26,7 @@ form legend{
     color: rgb(46, 44, 46);
     margin: 0 1rem;
     padding: 0.5rem;
+    text-align: center;
 }
 
 form label.top, form div {
