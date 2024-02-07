@@ -78,3 +78,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
   //Timestamp
   document.getElementById('timestamp').value = new Date().toISOString();
+

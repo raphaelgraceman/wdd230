@@ -7,7 +7,7 @@
     <meta name="description"
     content="Raphael Dotse's Web Frontend Development is an assignment portal 
     meant to host and display pages of completed weekly assignments.">
-    <meta name="authur" content="Raphael Dotse">
+    <meta name="author" content="Raphael Dotse">
 
     <link rel="icon" href="images/favicon.ico">
 
@@ -37,7 +37,6 @@
         <div class="headline">
             <div id="logo_brand_name">
                 <a href="index.html">
-                    <source media="(max-width: 500)" srcset="images/logo_75x75.png">
                     <img src="images/logo_3_225x225.png" alt="Logo" loading="lazy">
                 </a>
                 <h1 class="brandHead">Graceman <br>Chamber of commerce</h1>
@@ -49,14 +48,11 @@
                 <a href="https://www.instagram.com/imamraphaella/?hl=en" target="_blank">
                     <img src="images/instagram.png" alt="Instagram icon" loading="lazy"></a>
                 <a href="https://web.facebook.com/profdotseraphael" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon" loading="lazy">
-                </a>
+                    <img src="images/facebook.png" alt="fb icon" loading="lazy"></a>
                 <a href="https://www.linkedin.com/in/dotseraphael/" target="_blank">
-                    <img src="images/linkedIn.png" alt="LinkedIn Icon" loading="lazy">
-                </a>
+                    <img src="images/linkedIn.png" alt="LinkedIn Icon" loading="lazy"></a>
                 <a href="https://www.youtube.com/channel/UC66TaeWF4VClYB6eqzK9rtA" target="_blank">
-                    <img src="images/youtube.jpg" alt="YouTube Icon" loading="lazy">
-                </a>
+                    <img src="images/youtube.jpg" alt="YouTube Icon" loading="lazy"></a>
             </div>
             <div id="hamburger_container">
                 <button id="menu"></button>
@@ -82,9 +78,11 @@
                 <div id="temple">
                     <h4>New Office Building</h4>
                 </div>
-                <source media="(max-width: 500)" srcset="images/utah-hero-small-s.webp">
-                <source media="(min-width: 1000)" srcset="images/utah-hero-medium-s.webp">
+               <picture>
+                <source media="(max-width: 500px)" srcset="images/utah-hero-small-s.webp">
+                <source media="(min-width: 1000px)" srcset="images/utah-hero-medium-s.webp">
                 <img src="images/utah-hero-large-s.webp" alt="Hero Image" loading="lazy">
+               </picture>
             </div>
             <div id="weather">
                 <h4>Weather</h4>
@@ -94,22 +92,23 @@
                 <img src="images/library.jpg" alt="Library Image" loading="lazy">
             </div>
             <div id="odusec">
-                <source media="(max-width: 500)" srcset="images/hero-crossover.webp">
-                <source media="(min-width: 1000)" srcset="images/hero-crossover-medium.webp">
-                <img src="images/hero-crossover-large.webp" alt="Cross Over Image" loading="lazy">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/hero-crossover.webp">
+                    <source media="(min-width: 1000px)" srcset="images/hero-crossover-medium.webp">
+                    <img src="images/hero-crossover-large.webp" alt="Cross Over Image" loading="lazy">
+                </picture>
             </div>
             <div id="sportlight-1">
                 <div id="sportlight-cover">
                     <h4>Sportlight 1 <br><span>Graceman Remedial Centre </span></h4>
                     <p>We are for you!</p><br>
-                    <span id="moto"> <marquee><i>Your GRADE is our SUCCESS</i></marquee></span><br>
+                    <marquee id="moto">Your GRADE is our SUCCESS</marquee><br>
                     <div class="contact-us">
                         <span>graceman@gmail.com</span><br>
-                        <a>+(233) 546229003   |   <span>
-                            <a id="fb" href="https://web.facebook.com/profdotseraphael" target="_blank">Facebook</span></a>
+                        <a>+(233) 546229003   |  </a> <span>
+                            <a id="fb" href="https://web.facebook.com/profdotseraphael" target="_blank">Facebook </a></span>
                     </div>
                     <img id="elkanah" src="images/elkanah.jpg" alt="student photo" loading="lazy">
-                </div>
                 </div>
             </div>
 
@@ -123,14 +122,17 @@
 
             <div id="join">
                 <h4>Subscription</h4>
-                <button><h5>Join</h5></button>
+                <h5><button>Join</button></h5>
                 <p>Enjoy the exclusive offers with our team of expect. click the button 
                     to join the chamber now. Remember it one time subscription at no fee. 
                 </p>
             </div>
             <div id="sportlight-2">
                 <h4>Sportlight 2</h4>
-                <p>click <span><button><a href="https://www.betpawa.com.gh/" target="_blank">here</a></button></span> to bet for the <span id="day"></span> winning draw toninght.</p>
+                <p>click <span> 
+                    <button onclick="window.location.href='https://www.betpawa.com.gh/'">Click me</button>
+                     to bet for the <span id="day"></span> winning draw toninght.
+                </span></p>
                 <a href="https://www.betpawa.com.gh/" target="_blank">
                     <img src="images/bet-image.jpg" alt="Bet Image" loading="lazy">
                 </a>
@@ -150,7 +152,7 @@
             </a>
             <span class="brandHead">Graceman Chamber <br><br><span id="address">Digital Address: CX-187-9363</span></span>
             <div id="contactDetail"><span>Email:</span>
-                <a id="email" href="#"> raphaelprominence10@gmail.com</a>
+                <a id="email" href="mailto:raphaelprominence10@gmail.com">Send an email</a>
                 <br><br> <span id="call-us-now">
                     <a href="tel:+233546229003">Call: (233) 546229003</a>
                 </span>
@@ -170,7 +172,7 @@
             <div id="footing-links">
                 <nav>
                     <ul class="navigation">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">About</a></li>
                     </ul>
