@@ -1,0 +1,40 @@
+{
+    "familName": "Amoah", 
+    "dateMoved": "2023",
+    "totalFamily": "54",
+    "visited": "No",
+    "members": [
+        {
+            "name": "Emmanuel",
+            "gendar": "Male",
+            "dob": "February 1, 2023"
+        },
+        {
+            "name": "Adwoa Attah",
+            "gendar": "Female",
+            "dob": "August 18, 2020"
+        },
+        {
+            "name": "Agyaa Nimo",
+            "gendar": "Male",
+            "dob": "December 23, 2021"
+        },
+
+        {
+            "name": "Esiamaa Quayson",
+            "gendar": "Male",
+            "dob": "Juky 14, 2023"
+        },
+
+        {
+            "name": "Eninda Kwabuttah",
+            "gendar": "male",
+            "dob": "May 18, 2022",
+            "grandChildren": [
+                "Effuah Mansa", 
+                "Juliana Buabeng",
+                "Emelia Boadi"
+            ]
+        }
+    ]
+}
