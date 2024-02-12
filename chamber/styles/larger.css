@@ -108,12 +108,11 @@
     .navigation a {
         text-align: center;
     }
-    nav .active:hover {
-        background-color: black;
-    }
+   
+    
     nav a:hover{
         border: 1px solid rgb(45, 53, 60);
-        color: rgb(0, 0, 0);
+        color: rgb(242, 17, 17);
         padding: 2px;
         border-radius: 5px; 
     }
@@ -164,7 +163,7 @@
         border: 2px solid #1234;
         margin-left: 0px;
         text-align: center;
-        background-image: url(/images/Raphael_fb.jpg);
+        padding: 5px;
     }
     #business-image {
         grid-column: 2/4;

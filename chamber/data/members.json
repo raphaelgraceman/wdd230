@@ -1,0 +1,24 @@
+{
+    "members": [
+      {
+        "name": "Royal Seed Orphanage",
+        "address": "p.O Box OH 207",
+        "phone": "+233246335618",
+        "website": "https://www.royalseedhome.org",
+        "image": "images/student.jpg",
+        "membershipLevel": "Gold",
+        "otherInfo": "Royal seed Orphanage is the leading Orphanage in Ghana."
+      },
+      {
+        "name": "Royal Seed School",
+        "address": "p.O Box OH 207, Kasoa",
+        "phone": "+233546229003",
+        "website": "https://www.royalseedhome.org",
+        "image": "images/studies.jpg",
+        "membershipLevel": "Silver",
+        "otherInfo": "Royal Home School is one of the best schools awarded first in the Municipality on humanitarian grounds."
+      }
+      
+    ]
+  }
+  
