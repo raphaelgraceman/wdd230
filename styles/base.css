@@ -170,6 +170,13 @@ footer{
     text-align: center;
 }
 
+#fig img{
+    width: 35px;
+}
+figcaption{
+    margin-left: 20px;
+    font-size: 9px;
+}
 #visit-parag {
     font-style: italic;
     font-size: 12px;

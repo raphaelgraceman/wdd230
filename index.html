@@ -96,9 +96,14 @@
     
             <section class="card" id="card-2">
                 <h2>Information</h2>
-                <p>Weather: <span id="weather"></span><br>
-                    <span id="visit-parag">Number of visits to the site:</span>
-                    <span id="visits"></span></p>
+                <div id="weather-sta">                    
+                    <figure id="fig">
+                        <img id="weather-icon" src="week05/images/weatherIcon.png" alt="Weather Icon" width="">
+                        <p id="weather-info">The current temperature in Trier, Germany is <span id="current-temp"></span>  °F<span></span></p>
+                        <figcaption></figcaption>
+                    </figure>
+                </div><br><br><br>
+                <p id="visit-parag">Number of visits to the site:<span id="visits"></span></p>
             </section>
         </div>
     </main>
@@ -113,5 +118,6 @@
         <p>Last Modification: <span id="lastModified"></span><span ></span></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="week05/scripts/weather.js"></script>
 </body>
 </html>
