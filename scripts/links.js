@@ -3,10 +3,10 @@
 // Define the base URL
 const baseURL = "https://github.com/raphaelgraceman/wdd230";
 
-// Define the URL for the links.json data file
-const linksURL = "https://github.com/raphaelgraceman/wdd230/data/links.json";
+// my githubio link
+const linksURL = "https://raphaelgraceman.github.io/wdd230/data/links.json";
+
 // Asynchronous function to fetch the links data
-//yourgithubusername.github.io/wdd230/data/links.json
 async function getLinks() {
   try {
     const response = await fetch(linksURL);
