@@ -169,13 +169,22 @@ footer{
     color: white;
     text-align: center;
 }
-
+#fig{
+    display: flex;
+    margin-top: 10px;
+    font-size: 13px;
+}
+#current-temp, #fah{
+    padding: 3px;
+}
 #fig img{
     width: 35px;
+    border: none;
+    padding: 0;
 }
 figcaption{
-    margin-left: 20px;
-    font-size: 9px;
+    text-transform: capitalize;
+    padding: 4px;
 }
 #visit-parag {
     font-style: italic;
