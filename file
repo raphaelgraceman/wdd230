@@ -1,8 +1,0 @@
-// Set the baseURL variable
-const baseURL = 'https://yourusername.github.io/wdd230/';
-
-// Reference the links.json data file
-const linksURL = 'links.json';
-
-// Asynchronous function to get the links data
-
