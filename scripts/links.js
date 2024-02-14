@@ -4,7 +4,7 @@
 const baseURL = "https://github.com/raphaelgraceman/wdd230";
 
 // Define the URL for the links.json data file
-const linksURL = "data/links.json";
+const linksURL = "https://github.com/raphaelgraceman/wdd230/blob/main/data/links.json";
 
 // Asynchronous function to fetch the links data
 async function getLinks() {
@@ -31,19 +31,31 @@ function displayLinks(weeks) {
       linksList.style.textDecoration = "underline"; // Underline text
       linksList.style.color = "blue"; // Change the text color to blue
   
-      week.links.forEach(link => {
+      week.links.forEach((link, index) => {
         const linkItem = document.createElement("div");
         const anchor = document.createElement("a");
+        const anchor2 = document.createElement("span");
         anchor.href = baseURL + link.url;
         anchor.textContent = link.title;
         linkItem.appendChild(anchor);
+  
+        // Add a vertical bar after each link (except the last one)
+        if (index < week.links.length - 1) {
+          const separator = document.createElement("span");
+          separator.textContent = " | ";
+          separator.style.color = "black";
+          separator.style.padding = "10px";
+          linkItem.appendChild(separator);
+        }
+  
         linksList.appendChild(linkItem);
-      });
+        });
   
       weekItem.appendChild(linksList);
       activityList.appendChild(weekItem);
     });
 }
+  
 
 // Call the getLinks function to fetch and display the links
 getLinks();

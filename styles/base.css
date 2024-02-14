@@ -149,7 +149,7 @@ h2 {
     line-height: 30px;
 }
 .card a{
-    color: black;
+    color: rgb(0, 60, 255);
 }
 .divider {
     margin-left: 10px;
@@ -157,7 +157,7 @@ h2 {
     color: #251f1f;
 }
 #sublinks {
-    color: rgb(33 31 45);
+    color: rgb(38, 0, 255);
 }
 .sublink{
     color: rgb(2 5 120);
