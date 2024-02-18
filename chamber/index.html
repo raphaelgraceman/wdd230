@@ -34,7 +34,7 @@
         <div id="mode">
             🕶️
         </div>
-        <div class="headline">
+        <div class="headline" id="timestamp">
             <div id="logo_brand_name">
                 <a href="index.html">
                     <img src="images/logo_3_225x225.png" alt="Logo" loading="lazy">
@@ -73,6 +73,8 @@
      <!--Main-->
      <main>
         <h3>Welcome To Graceman Chamber</h3>
+        <div id="banner">You are invited for the Chamber meet and greet on Wednesday at 7:00 p.m.</div>
+        <video src="videos/raphael-thelordshand-vid.mp4"></video>
         <section>
             <div id="hero-image">
                 <div id="temple">
@@ -85,11 +87,9 @@
                </picture>
             </div>
             <div id="weather">
-                <h4>Weather</h4>
-                <p>The current temperature <br>in Trier, Germany is <span id="current-temp"></span></p>
-                <figure>
-                    <img id="weather-icon" src="/week05/images/weatherIcon.png" alt="Weather Icon" width="">
-                    <figcaption></figcaption>
+                <h4>Weather</h4>         
+                <figure id="fig">
+                    <img id="weather-icon" src="/week05/images/weatherIcon.png" alt="Weather Icon"><span id="current-temp"></span><span id="fah">°F  - </span> <figcaption></figcaption>
                 </figure>
             </div>
             <div id="business-image">
@@ -127,17 +127,16 @@
 
             <div id="join">
                 <h4>Subscription</h4>
-                <h5><button>Join</button></h5>
+                <h5 id="join-button">
+                   <button><a href="join.html">Join</a></button></h5>
                 <p>Enjoy the exclusive offers with our team of expect. click the button 
                     to join the chamber now. Remember it one time subscription at no fee. 
                 </p>
             </div>
             <div id="sportlight-2">
                 <h4>Sportlight 2</h4>
-                <p>click <span> 
-                    <button onclick="window.location.href='https://www.betpawa.com.gh/'">Click me</button>
+                <button onclick="window.location.href='https://www.betpawa.com.gh/'">Click</button>
                      to bet for the <span id="day"></span> winning draw toninght.
-                </span></p>
                 <a href="https://www.betpawa.com.gh/" target="_blank">
                     <img src="images/bet-image.jpg" alt="Bet Image" loading="lazy">
                 </a>
@@ -156,8 +155,8 @@
                 <img src="images/logo_75x75.png" alt="logo" loading="lazy">
             </a>
             <span class="brandHead">Graceman Chamber <br><br><span id="address">Digital Address: CX-187-9363</span></span>
-            <div id="contactDetail"><span>Email:</span>
-                <a id="email" href="mailto:raphaelprominence10@gmail.com">Send an email</a>
+            <div id="contactDetail">
+                <a id="email" href="mailto:raphaelprominence10@gmail.com">Mail us</a>
                 <br><br> <span id="call-us-now">
                     <a href="tel:+233546229003">Call: (233) 546229003</a>
                 </span>
@@ -175,7 +174,7 @@
             <div id="copyright">&copy; <span id="currentyear"></span> Raphael Dotse Graceman</div>
            
             <div id="footing-links">
-                <nav>
+                <nav id="links-footer">
                     <ul class="navigation">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Contact</a></li>
@@ -183,10 +182,21 @@
                     </ul>
                 </nav>
             </div>
-            <span>Last Modified:<br><span id="lastModified"></span></span>
+            <span id="lastM">Last Modified:<span id="lastModified"></span></span>
+        </div>
+        <div class="social_links-footer">
+            <a href="https://wa.link/gew4ae" target="_blank">
+                <img src="images/whatsapp.jpg" alt="WhatsApp icon" loading="lazy"></a>
+            <a href="https://www.instagram.com/imamraphaella/?hl=en" target="_blank">
+                <img src="images/instagram.png" alt="Instagram icon" loading="lazy"></a>
+            <a href="https://web.facebook.com/profdotseraphael" target="_blank">
+                <img src="images/facebook.png" alt="fb icon" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/dotseraphael/" target="_blank">
+                <img src="images/linkedIn.png" alt="LinkedIn Icon" loading="lazy"></a>
+            <a href="https://www.youtube.com/channel/UC66TaeWF4VClYB6eqzK9rtA" target="_blank">
+                <img src="images/youtube.jpg" alt="YouTube Icon" loading="lazy"></a>
         </div>
     </footer>
     <script src="scripts/index.js"></script>
-    <script src="/week05/scripts/weather.js"></script>
 </body>
 </html>

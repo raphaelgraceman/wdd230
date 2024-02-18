@@ -16,13 +16,14 @@
 
     }
     header {
-        background-color:rgb(57, 58, 65);
+        background-color:rgb(0, 17, 149);
         color: white;
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
         padding: 2px;
     }
-    
+    video {
+        width: 100%;
+        height: fit-content;
+    }
     #logo_brand_name img {
         width: 60px;
         height: 66px;
@@ -31,10 +32,13 @@
         border-radius: 15px;
         cursor: pointer;
     }
-    .social_links a img {
+    .social_links a img{
         width: 32px;
         height: 26px;
         border-radius: 15px;
+    }
+    .social_links-footer a img{
+        margin-left: 13%;
     }
     
     
@@ -165,6 +169,18 @@
         text-align: center;
         padding: 5px;
     }
+    #fig img {
+        width: 76px;
+        height: 72px;
+        border: none;
+        border-radius: 15px;
+    }
+    main img {
+        float: right;
+        margin: 0 0 1rem 1rem;
+        border: 1px solid #333;
+        box-shadow: 0 0 15px #777;
+    }
     #business-image {
         grid-column: 2/4;
         grid-row: 2;
@@ -234,16 +250,8 @@
         justify-content: center;
         margin-top: 15px;
     }
-    #join h5 {
-        padding: 5px;
-        background-color: #000000;
-        width: 60px;
-        color: yellow;
-        border-radius: 15px;
-        cursor: pointer;
-        text-align: center;
-    }
-
+   
+   
     #join button {
         border-radius: 15px;
         border: 3px solid rgb(255, 162, 0);
@@ -269,6 +277,7 @@
     }
     #sportlight-2 img {
         width: 100%;
+        height: fit-content;
     }
     #sportlight-2 button {
         border: none;
@@ -310,7 +319,7 @@
         border-radius: 15px;
     }
     #contactDetail{
-        margin-left: 20%;
+        margin-left: 18%;
     }
     #map {
         display: block;
@@ -352,10 +361,13 @@
     #footer-nav {
         display: flex;
         border: 2px solid #1234;
-        gap: 50px;
+        gap: 10%;
         background-color: #478;
         margin-right: 5px;
         margin-left: 5px;
+    }
+    #copyright, #currentyear, #lastModified, #footer-nav span{
+        font-size: 16px;
     }
     #footer-nav p {
         margin-top: 15px;
@@ -373,6 +385,9 @@
         display: block;
         font-size: 14px;
     }
+    #links-foote{
+        display: block;
+    }
     #footing-links nav{
         display: flex;
         padding: .5px;
@@ -382,9 +397,14 @@
     #lastModified {
         color: white;
         margin-top: 15px;
-        position: absolute;
     }
-    
+    #lastM{
+        float: right;
+        width: fit-content;
+        margin-top: 15px;
+        padding: 20px;
+    }
+   
     #mode {
         position: absolute;
         top: 1rem;
@@ -418,5 +438,24 @@
         border: 5px solid green;
     }
    
-      
+    /*---DIRECTORY-------*/
+    .grid-view {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100%;
+        margin-left: 0px;
+    }
+    .directory-h3{
+        text-align: center;
+        padding: 2px;
+    }
+    .section-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 0;
+    }
+    #main-view h2{
+        text-align: center;
+    }
+   
 }

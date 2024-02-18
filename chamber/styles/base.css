@@ -12,11 +12,12 @@ body {
     margin-right: 1%;
 }
 header {
-    background-color:rgb(57, 58, 65);
+    background-color:rgb(0, 17, 149);
     color: white;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    
+}
+video {
+    width: 100%;
+    height: fit-content;
 }
 
 #logo_brand_name {
@@ -36,11 +37,18 @@ header {
 }
 h3{
     text-align: center;
+    padding: 50px;
+    background-image: image-set(images/utah-hero-large-s);
 }
 .social_links  {
    display: none;
 }
-
+.social_links-footer a img{
+    width: 32px;
+    height: 26px;
+    border-radius: 15px;
+    margin-left: 5%;
+}
 /*Hamburger styling */
 #menu {
     display: block;
@@ -52,8 +60,8 @@ h3{
     text-align: right;
 }
 #hamburger_container {
-   margin-left: 75%;
-   margin-top: -20px;
+   float: right;
+   margin-right: 1%;
 }
 
 #menu::before {
@@ -100,7 +108,7 @@ h3{
     font-weight: bold; 
     margin-bottom: 35px;
     margin-top: 3px;
-    border-radius: 15px;
+    font-size: 10px;
 }
 /* Main styling */
 #hero-image img {
@@ -152,15 +160,37 @@ section {
 #weather {
     grid-column: 3;
     grid-row: 1;
-    text-align: center;
+    text-align: left;
     margin-bottom: 10px;
     margin-left: 10px;
     border: 2px solid #1234;
 }
+#fig{
+    display: flex;
+    margin-top: 10px;
+    font-size: 13px;
+}
+#fig img {
+    width: 26px;
+    height: 23px;
+    border: none;
+    border-radius: 15px;
+}
+ #current-temp, #fah{
+    padding: 3px;
+    color: black;
+}
+
+#weather figcaption{
+    text-transform: capitalize;
+    padding: 4px;
+}
+
 #weather h4, #sportlight-1 h4, #news h4, 
 #join h4, #sportlight-2 h4 {
     color: rgb(255, 153, 0);
     background-color: #000;
+    text-align: center;
 }
 #hero-image {
     grid-column: 1/4;
@@ -183,6 +213,7 @@ section {
 }
 #odusec img{
     width: 100%;
+    height: fit-content;
 }
 #sportlight-1 {
     grid-column: 1/4;
@@ -194,6 +225,12 @@ section {
 }
 #sportlight-cover img {
     width: 100%;
+    height: fit-content;
+}
+
+#sportlight-cover span, #sportlight-cover p, #sportlight-cover marquee {
+    color: black;
+    font-weight: bolder;
 }
 #section-G {
     margin-bottom: 1px;
@@ -205,7 +242,9 @@ section {
 #join{
     display: none;
 }
-
+#social_links-footer{
+    display: flex;
+}
 /* copied from main */
 footer {
     background-color: white;
@@ -218,6 +257,7 @@ footer {
 
 .brandHead {
 font-size: 12px;
+padding-top: 15px;
 
 }
 #logo-footer {
@@ -226,7 +266,7 @@ font-size: 12px;
     background-color:rgb(57, 58, 65);
     color: white;
     padding: 2px;
-    margin-right: 2px;
+    margin-right:1%;
     margin-left: 2px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -235,11 +275,14 @@ font-size: 12px;
     width: 36px;
     height: 38px;
     margin-left: 2px;
-    margin-right: 3px;
+    margin-right: 1%;
     border-radius: 15px;
 }
 #contactDetail{
-    margin-left: 0%;
+    margin-left: 3%;
+}
+#contactDetail span{
+    font-size: 10px;
 }
 #map {
     display: none;
@@ -253,6 +296,7 @@ font-size: 12px;
 #email {
     color: yellow;
     font-size: 10px;
+    float: right;
 }
 #call-us-now a{ 
     color: rgb(0, 0, 0);
@@ -267,39 +311,47 @@ font-size: 12px;
 #address {
     display: none;
 }
-#class {
+#class{
+    display: none;
+}
+
+#copyright, #currentyear, #lastModified, #footer-nav span{
     font-size: 7px;
 }
 #footer-nav {
     display: flex;
     border: 2px solid #1234;
-    gap: 50px;
+    gap: 20%;
     background-color: #478;
     margin-right: 2px;
     margin-left: 2px;
+    padding: 10px;
 }
 #footer-nav p {
     margin-top: 15px;
 }
 #copyright{
-    margin-top: 15px;
     margin-left: 2px;
-    margin-right: 2%;
+    margin-top: 7px;
 }
 #footing-links {
     color: white;
-    margin-left: -20%;
+    display: none;
 }
 #footing-links nav{
     display: none;
     padding: .5px;
     background-color: #478;
 }
-#lastModified {
-    margin-left: 5%;
-    color: white;
-    margin-top: 15px;
+#lastM{
+    float: right;
+    width: fit-content;
+    margin-top: 7px;
 }
+#lastModified {
+    color: white;
+}
+
 main img {
     float: right;
     margin: 0 0 1rem 1rem;
@@ -476,17 +528,11 @@ main img {
 	padding: 10px;
 }
 .grid-view {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	max-width: 100%;
-	margin-left: 0px;
+	display: block;
 }
 
 .section-grid{
-	display: grid;
-	grid-template-columns: 1fr;
-	
-	margin-bottom: 0;
+	display: block;
 }
 .section-grid img {
 	width: 90%;
@@ -510,7 +556,12 @@ main img {
 	margin-right: 10px;
 	background-color: black;
 	color: rgb(255, 153, 0);
-	text-align: center;
+	padding: 2px;
+}
+.grid-view h2{
+    text-align: center;
+    color: black;
+    padding: 5px;
 }
 
 .section-grid p{
@@ -567,7 +618,4 @@ section a {
 	letter-spacing: 1.1pt;
 }
 
-img {
-	height: 75px;
-	max-width: 100%; /* Images are jerks - Seattle*/
-}
+
