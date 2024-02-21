@@ -18,17 +18,18 @@ header {
 #banner{
     background-color: #478;
     padding: 5px;
-    text-align: center;
+    text-align: justify;
+    font-size: 13px;
 }
 #banner::first-line{
     background-color: red;
     color: white;
     font-size: larger;
 }
+
 video {
     width: 100%;
     height: fit-content;
-   
 }
 
 #spotlightAds{
@@ -61,7 +62,6 @@ video {
 h3{
     text-align: center;
     padding: 50px;
-    background-image: image-set(images/utah-hero-large-s);
 }
 .social_links  {
    display: none;
@@ -81,10 +81,6 @@ h3{
     background-color: #eee;
     color: #000;
     text-align: right;
-}
-#hamburger_container {
-   float: right;
-   margin-right: 1%;
 }
 
 #menu::before {

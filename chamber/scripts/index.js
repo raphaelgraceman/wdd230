@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
   setTimeout(() => document.getElementById("visit-parag").style.textAlign = "center");
   setTimeout(() => document.getElementById("visit-parag").style.color = "White", 3000);
   setTimeout(() => document.getElementById("visit-parag").style.background = "Red", 3000);
-  setTimeout(() => document.getElementById("visit-parag").innerText = "Keep exploring our for your exploits!", 10000);
+  setTimeout(() => document.getElementById("visit-parag").innerText = "Keep exploring the Chamber for your exploits!", 10000);
   setTimeout(() => document.getElementById("visit-parag").innerText = "", 3000);
 
 
