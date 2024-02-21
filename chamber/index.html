@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
    
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -72,6 +71,7 @@
    
      <!--Main-->
      <main>
+        <p id="visit-parag"><span id="visit"></span></p>
         <h3>Welcome To Graceman Chamber</h3><hr>
         <div id="banner">You are invited!<br> Join us for the Chamber meet and greet on Wednesday at 7:00 p.m. <br>
             Don't miss this opportunity to network with local businesses and community members. See you there!
@@ -81,7 +81,10 @@
             <source src="videos/raphael-thelordshand-vid.mp4" type="video/mp4">
         </video>
         <!--Sportlight Advertisement-->
-        <div id="spotlightMembers"></div>
+      
+        <marquee class="marquee" direction="left" scrollamount="7">
+            <div id="spotlightAds"></div>
+          </marquee>
 
         <section>
             <div id="hero-image">
@@ -121,6 +124,9 @@
                         <a>+(233) 546229003   |  </a> <span>
                             <a id="fb" href="https://web.facebook.com/profdotseraphael" target="_blank">Facebook </a></span>
                     </div>
+                    <marquee class="marquee" direction="left" scrollamount="5">
+                        <div id="sports-1"></div>
+                    </marquee>
                     <img id="elkanah" src="images/elkanah.jpg" alt="student photo" loading="lazy">
                 </div>
             </div>
@@ -206,5 +212,6 @@
         </div>
     </footer>
     <script src="scripts/index.js"></script>
+  
 </body>
 </html>

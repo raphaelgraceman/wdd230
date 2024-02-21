@@ -70,7 +70,9 @@ document.addEventListener("DOMContentLoaded", function() {
 		document.getElementById("visit").innerText = message;
 	  }
 	}
-  
+  // Set a timeout to change the text after 3 seconds (3000 milliseconds)
+  setTimeout(() => {
+    lastVisit.textContent = "continue to explore the page";}, 3000);
 	// Update the last visit date in localStorage
 	localStorage.setItem("lastVisit", currentVisit);
   });
@@ -133,30 +135,30 @@ function closeBanner() {
 
         
 //Sportlight Advertisement
-const membersData = [
-    { name: "Member 1", membershipLevel: "silver", logo: "images/student.jpg", description: "Description of Member 1" },
-    { name: "Member 2", membershipLevel: "gold", logo: "images\logo_75x75.png", description: "Description of Member 2" },
-    { name: "Member 3", membershipLevel: "silver", logo: "logo3.png", description: "Description of Member 3" },
-];
+fetch("data/members.json")
+.then(response => response.json())
+.then(data => {
+  const members = data.members;
+  const qualifiedMembers = members.filter(member => member.membershipLevel === "Silver" || member.membershipLevel === "Gold");
+  const awardWinner = members.filter(member => member.membershipLevel === "Silver");
 
-const qualifiedMembers = membersData.filter(member => member.membershipLevel === "silver" || member.membershipLevel === "gold");
+  // Shuffle the qualified members array
+  const shuffledMembers = qualifiedMembers.sort(() => Math.random() - 0.5);
+  const shuffledAwardWinners = awardWinner.sort(() => Math.random() - 0.5);
 
-const spotlightMembers = [];
-while (spotlightMembers.length < 2 || spotlightMembers.length < qualifiedMembers.length) {
-    const randomIndex = Math.floor(Math.random() * qualifiedMembers.length);
-    if (!spotlightMembers.includes(qualifiedMembers[randomIndex])) {
-        spotlightMembers.push(qualifiedMembers[randomIndex]);
-    }
-}
+  // Select a random subset of members to display
+  const randomMembers = shuffledMembers.slice(0, Math.min(1, shuffledMembers.length));
+  const randomWinner = shuffledAwardWinners.slice(0, Math.min(1, shuffledMembers.length));
 
-const spotlightMembersContainer = document.getElementById("spotlightMembers");
-spotlightMembers.forEach(member => {
-    const memberElement = document.createElement("div");
-    memberElement.classList.add("spotlight-member");
-    memberElement.innerHTML = `
-        <h3>${member.name}</h3>
-        <img src="${member.logo}" alt="${member.name} logo">
-        <p>${member.description}</p>
-    `;
-    spotlightMembersContainer.appendChild(memberElement);
-});
+  const spotlightAdsContainer = document.getElementById("spotlightAds");
+  const spotAdsContainer = document.getElementById("sports-1");
+  randomMembers.forEach(member => {
+    const adElement = document.createElement("p");
+    const adsports = document.createElement("p");
+    adElement.textContent = `Top Chamber Members: ${member.name} - ${member.membershipLevel} member`;
+    adsports.textContent = `2024 Global Award Winner: ${member.name} - ${member.membershipLevel} member`;
+    spotlightAdsContainer.appendChild(adElement);
+    spotAdsContainer.appendChild(adsports);
+  });
+})
+.catch(error => console.error("Error fetching JSON data:", error));

@@ -30,10 +30,17 @@ video {
     height: fit-content;
    
 }
-.spotlight-member {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
+
+#spotlightAds{
+    background-color: #478;
+    padding: 20px;
+    text-align: center;
+    width: fit-content;
+    font-family: 'CurlyFont', cursive;
+    border: #000 2px solid;
+    border-radius: 12px 90px;
+    border-bottom: #000 5px solid;
+    margin: 5%;
 }
 
 #logo_brand_name {
