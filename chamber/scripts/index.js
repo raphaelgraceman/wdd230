@@ -1,13 +1,13 @@
 //store the selected elements that we are going to use.
-const mainnav = document.querySelector('.navigation');
-const hambutton = document.querySelector('#menu');
+const mainnav = document.querySelector(".navigation");
+const hambutton = document.querySelector("#menu");
 
 //Add a click event istener to the hamburger button and 
 // use a callback function that toggles the list element's 
 // list of classes
-hambutton.addEventListener('click', () => {
-    mainnav.classList.toggle('show');
-    hambutton.classList.toggle('show');
+hambutton.addEventListener("click", () => {
+    mainnav.classList.toggle("show");
+    hambutton.classList.toggle("show");
 });
 
 
@@ -120,6 +120,43 @@ apiFetch();
 
 
 //Chamber Home Page Banner
-const banner = document.getElementById("banner");
+
+// Display the banner only on Mondays, Tuesdays, and Wednesdays
+if (dayName >= 1 && dayName <= 3) {
+	document.getElementById("banner").style.display = "block";
+}
+
+// Function to close the banner
+function closeBanner() {
+	document.getElementById("banner").style.display = "none";
+}
 
         
+//Sportlight Advertisement
+const membersData = [
+    { name: "Member 1", membershipLevel: "silver", logo: "images/student.jpg", description: "Description of Member 1" },
+    { name: "Member 2", membershipLevel: "gold", logo: "images\logo_75x75.png", description: "Description of Member 2" },
+    { name: "Member 3", membershipLevel: "silver", logo: "logo3.png", description: "Description of Member 3" },
+];
+
+const qualifiedMembers = membersData.filter(member => member.membershipLevel === "silver" || member.membershipLevel === "gold");
+
+const spotlightMembers = [];
+while (spotlightMembers.length < 2 || spotlightMembers.length < qualifiedMembers.length) {
+    const randomIndex = Math.floor(Math.random() * qualifiedMembers.length);
+    if (!spotlightMembers.includes(qualifiedMembers[randomIndex])) {
+        spotlightMembers.push(qualifiedMembers[randomIndex]);
+    }
+}
+
+const spotlightMembersContainer = document.getElementById("spotlightMembers");
+spotlightMembers.forEach(member => {
+    const memberElement = document.createElement("div");
+    memberElement.classList.add("spotlight-member");
+    memberElement.innerHTML = `
+        <h3>${member.name}</h3>
+        <img src="${member.logo}" alt="${member.name} logo">
+        <p>${member.description}</p>
+    `;
+    spotlightMembersContainer.appendChild(memberElement);
+});

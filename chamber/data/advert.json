@@ -1,0 +1,19 @@
+{
+    "advert": [
+      {
+        "name": "John Doe",
+        "membershipLevel": "silver",
+        "advertisement": "Check out our latest products!"
+      },
+      {
+        "name": "Jane Smith",
+        "membershipLevel": "gold",
+        "advertisement": "Don't miss our exclusive deals!"
+      },
+      {
+        "name": "Bob Johnson",
+        "membershipLevel": "silver",
+        "advertisement": "Join us for our upcoming event!"
+      }
+    ]
+  }

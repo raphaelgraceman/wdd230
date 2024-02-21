@@ -15,9 +15,25 @@ header {
     background-color:rgb(0, 17, 149);
     color: white;
 }
+#banner{
+    background-color: #478;
+    padding: 5px;
+    text-align: center;
+}
+#banner::first-line{
+    background-color: red;
+    color: white;
+    font-size: larger;
+}
 video {
     width: 100%;
     height: fit-content;
+   
+}
+.spotlight-member {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
 }
 
 #logo_brand_name {
