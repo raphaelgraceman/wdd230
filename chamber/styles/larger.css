@@ -20,6 +20,11 @@
         color: white;
         padding: 2px;
     }
+    #banner{
+        background-color: #478;
+        padding: 10px;
+        text-align: center;
+    }
     video {
         width: 100%;
         height: fit-content;

@@ -71,8 +71,13 @@ document.addEventListener("DOMContentLoaded", function() {
 	  }
 	}
   // Set a timeout to change the text after 3 seconds (3000 milliseconds)
-  setTimeout(() => {
-    lastVisit.textContent = "continue to explore the page";}, 3000);
+  setTimeout(() => document.getElementById("visit-parag").style.textAlign = "center");
+  setTimeout(() => document.getElementById("visit-parag").style.color = "White", 3000);
+  setTimeout(() => document.getElementById("visit-parag").style.background = "Red", 3000);
+  setTimeout(() => document.getElementById("visit-parag").innerText = "Keep exploring our for your exploits!", 10000);
+  setTimeout(() => document.getElementById("visit-parag").innerText = "", 3000);
+
+
 	// Update the last visit date in localStorage
 	localStorage.setItem("lastVisit", currentVisit);
   });
