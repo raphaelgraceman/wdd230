@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
   // Set a timeout to change the text after 3 seconds (3000 milliseconds)
   setTimeout(() => document.getElementById("visit-parag").style.textAlign = "center");
-  setTimeout(() => document.getElementById("visit-parag").style.color = "White", 3000);
+  setTimeout(() => document.getElementById("visit-parag").style.color = "#181515", 3000);
   setTimeout(() => document.getElementById("visit-parag").style.background = "Red", 3000);
   setTimeout(() => document.getElementById("visit-parag").innerText = "Keep exploring the Chamber for your exploits!", 10000);
   setTimeout(() => document.getElementById("visit-parag").innerText = "", 3000);
@@ -167,3 +167,7 @@ fetch("data/members.json")
   });
 })
 .catch(error => console.error("Error fetching JSON data:", error));
+
+
+//cookies
+document.cookie = "cookieName=cookieValue; SameSite=Lax; Secure";

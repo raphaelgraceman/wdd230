@@ -62,6 +62,7 @@ video {
 h3{
     text-align: center;
     padding: 50px;
+    color: black;
 }
 .social_links  {
    display: none;
