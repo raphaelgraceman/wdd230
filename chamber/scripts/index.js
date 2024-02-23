@@ -152,21 +152,36 @@ fetch("data/members.json")
   const shuffledAwardWinners = awardWinner.sort(() => Math.random() - 0.5);
 
   // Select a random subset of members to display
-  const randomMembers = shuffledMembers.slice(0, Math.min(1, shuffledMembers.length));
+  const randomMembers = shuffledMembers.slice(0, Math.min(3, shuffledMembers.length));
   const randomWinner = shuffledAwardWinners.slice(0, Math.min(1, shuffledMembers.length));
 
   const spotlightAdsContainer = document.getElementById("spotlightAds");
   const spotAdsContainer = document.getElementById("sports-1");
+
+  // Create a heading element for the random items
+  const headingElement = document.createElement("h2");
+  headingElement.textContent = "Top Chamber Members";
+  headingElement.classList.add("spotlight-heading");
+
+  // Append the heading element to the spotlightAdsContainer
+  spotlightAdsContainer.appendChild(headingElement);
+
+  // Iterate over randomMembers and randomWinner to display them under the heading
   randomMembers.forEach(member => {
     const adElement = document.createElement("p");
-    const adsports = document.createElement("p");
-    adElement.textContent = `Top Chamber Members: ${member.name} - ${member.membershipLevel} member`;
-    adsports.textContent = `2024 Global Award Winner: ${member.name} - ${member.membershipLevel} member`;
+    adElement.textContent = `${member.name} - ${member.membershipLevel} member`;
+    adElement.classList.add("member");
     spotlightAdsContainer.appendChild(adElement);
-    spotAdsContainer.appendChild(adsports);
   });
-})
-.catch(error => console.error("Error fetching JSON data:", error));
+
+  randomWinner.forEach(winner => {
+    const adsports = document.createElement("p");
+    adsports.textContent = `2024 Global Award Winner: ${winner.name} - ${winner.membershipLevel} member`;
+    adsports.classList.add("winner");
+    spotlightAdsContainer.appendChild(adsports);
+  });
+});
+
 
 
 //cookies

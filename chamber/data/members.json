@@ -17,6 +17,33 @@
         "image": "images/studies.jpg",
         "membershipLevel": "Silver",
         "otherInfo": "Royal Home School is one of the best schools awarded first in the Municipality on humanitarian grounds."
+      },
+      {
+        "name": "Good Shepherd Int. School",
+        "address": "P.O Box 39, Kasoa",
+        "phone": "+233546229003",
+        "website": "#",
+        "image": "images/studies.jpg",
+        "membershipLevel": "Silver",
+        "otherInfo": "Good Shepherd School is one of the best schools awarded first in the Municipality on humanitarian grounds."
+      },
+      {
+        "name": "Ebenezer High Academy",
+        "address": "P.O Box 27, Kasoa",
+        "phone": "+233546229003",
+        "website": "#",
+        "image": "images/studies.jpg",
+        "membershipLevel": "Silver",
+        "otherInfo": "Ebenezer High Academy is one of the best schools awarded first in the Municipality on humanitarian grounds."
+      },
+      {
+        "name": "Einstien International School",
+        "address": "P.O Box 94, Kasoa",
+        "phone": "+233546229003",
+        "website": "#",
+        "image": "images/studies.jpg",
+        "membershipLevel": "Silver",
+        "otherInfo": "Einstien is one of the best schools awarded first in the Municipality on humanitarian grounds."
       }
       
     ]

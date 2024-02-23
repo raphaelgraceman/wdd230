@@ -33,7 +33,6 @@ video {
 }
 
 #spotlightAds{
-    background-color: #478;
     padding: 20px;
     text-align: center;
     width: fit-content;
@@ -42,6 +41,11 @@ video {
     border-radius: 12px 90px;
     border-bottom: #000 5px solid;
     margin: 5%;
+    color: black;
+}
+.spotlight-heading{
+    word-spacing: 5px;
+    padding: 30px;
 }
 
 #logo_brand_name {
