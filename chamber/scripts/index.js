@@ -151,12 +151,11 @@ fetch("data/members.json")
   const shuffledMembers = qualifiedMembers.sort(() => Math.random() - 0.5);
   const shuffledAwardWinners = awardWinner.sort(() => Math.random() - 0.5);
 
-  // Select a random subset of members to display
+ // Select a random subset of members to display
   const randomMembers = shuffledMembers.slice(0, Math.min(3, shuffledMembers.length));
   const randomWinner = shuffledAwardWinners.slice(0, Math.min(1, shuffledMembers.length));
 
   const spotlightAdsContainer = document.getElementById("spotlightAds");
-  const spotAdsContainer = document.getElementById("sports-1");
 
   // Create a heading element for the random items
   const headingElement = document.createElement("h2");
@@ -166,20 +165,44 @@ fetch("data/members.json")
   // Append the heading element to the spotlightAdsContainer
   spotlightAdsContainer.appendChild(headingElement);
 
-  // Iterate over randomMembers and randomWinner to display them under the heading
+  // Create an unordered list element
+  const ulElement = document.createElement("p");
+  ulElement.classList.add("spotlight-list");
+
+  // Iterate over randomMembers and append them as list items
   randomMembers.forEach(member => {
-    const adElement = document.createElement("p");
-    adElement.textContent = `${member.name} - ${member.membershipLevel} member`;
-    adElement.classList.add("member");
-    spotlightAdsContainer.appendChild(adElement);
+    const liElement = document.createElement("li");
+    liElement.textContent = `${member.name} - ${member.membershipLevel} member`;
+    liElement.classList.add("member");
+    ulElement.appendChild(liElement);
   });
 
+  // Append the unordered list to the spotlightAdsContainer
+  spotlightAdsContainer.appendChild(ulElement);
+
+  // Create a heading element for the random award winner
+  const winnerHeadingElement = document.createElement("h2");
+  winnerHeadingElement.textContent = "2024 Global Award Winner";
+  winnerHeadingElement.classList.add("spotlight-awardWinner");
+
+  // Append the winner heading element to the spotlightAdsContainer
+  spotlightAdsContainer.appendChild(winnerHeadingElement);
+
+  // Create an unordered list element for the winner
+  const winnerUlElement = document.createElement("p");
+  winnerUlElement.classList.add("spotlight-Winnerlist");
+
+  // Append the winner as a list item
   randomWinner.forEach(winner => {
-    const adsports = document.createElement("p");
-    adsports.textContent = `2024 Global Award Winner: ${winner.name} - ${winner.membershipLevel} member`;
-    adsports.classList.add("winner");
-    spotlightAdsContainer.appendChild(adsports);
+    const liElement = document.createElement("li");
+    liElement.textContent = `${winner.name} - ${winner.membershipLevel} member`;
+    liElement.classList.add("winner");
+    winnerUlElement.appendChild(liElement);
   });
+
+  // Append the winner unordered list to the spotlightAdsContainer
+  spotlightAdsContainer.appendChild(winnerUlElement);
+
 });
 
 

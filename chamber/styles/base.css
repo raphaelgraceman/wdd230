@@ -34,20 +34,43 @@ video {
 
 #spotlightAds{
     padding: 20px;
-    text-align: center;
-    width: fit-content;
+    text-align: left;
     font-family: 'CurlyFont', cursive;
-    border: #000 2px solid;
-    border-radius: 12px 90px;
-    border-bottom: #000 5px solid;
-    margin: 5%;
     color: black;
+    margin: 5%;
 }
 .spotlight-heading{
     word-spacing: 5px;
-    padding: 30px;
+    padding-bottom: 8px;
+    text-align: justify;
+    border: .5px solid blue;
+}
+.spotlight-list{
+    margin-left: 4%;
+    padding-bottom: 2px;
+    border: .01px solid white;
+    margin-bottom: 50px;
+    width: fit-content;
+    border-radius: 12px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+.spotlight-list::first-line{
+    background-color: black;
+    border-radius: 12px;
 }
 
+.spotlight-awardWinner{
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+.spotlight-Winnerlist{
+    text-align: center;
+    background-color: #c6c4c4;
+    border: 1px solid black;
+    padding: 10px;
+}
 #logo_brand_name {
     display: flex;
 }
