@@ -37,12 +37,12 @@ video {
     text-align: left;
     font-family: 'CurlyFont', cursive;
     color: black;
-    margin: 5%;
+    margin: .2%;
 }
 .spotlight-heading{
     word-spacing: 5px;
     padding-bottom: 8px;
-    text-align: justify;
+    text-align: left;
     border: .5px solid blue;
 }
 .spotlight-list{
@@ -50,7 +50,7 @@ video {
     padding-bottom: 2px;
     border: .01px solid white;
     margin-bottom: 50px;
-    width: fit-content;
+    width: 100%;
     border-radius: 12px;
     background-color: rgb(255, 166, 63);
     color: rgb(0, 0, 0);
@@ -58,6 +58,7 @@ video {
 .spotlight-list::first-line{
     background-color: black;
     border-radius: 12px;
+    color: white;
 }
 
 .spotlight-awardWinner{
@@ -193,6 +194,9 @@ section {
     margin-top: 4%;
     position: absolute;
     color: rgb(0, 0, 0);
+}
+#library-h4{
+    font-size: 10px;
 }
 #business-image {
     grid-column: 1/3;

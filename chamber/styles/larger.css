@@ -149,7 +149,9 @@
         margin-left: 5px;
         margin-top: 4px;
     }
-    /*copied */
+    .spotlight-list{
+        width: fit-content;
+    }
     main img {
         float: right;
         margin: 0 0 1rem 1rem;

@@ -128,7 +128,7 @@ apiFetch();
         
 //Sportlight Advertisement
 fetch("data/members.json")
-
+.then(response => response.json())
 .then(data => {
   const members = data.members;
   const qualifiedMembers = members.filter(member => member.membershipLevel === "Silver" || member.membershipLevel === "Gold");
