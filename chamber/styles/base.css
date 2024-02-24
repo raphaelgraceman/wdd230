@@ -52,8 +52,8 @@ video {
     margin-bottom: 50px;
     width: fit-content;
     border-radius: 12px;
-    background-color: rgb(255, 0, 0);
-    color: white;
+    background-color: rgb(255, 166, 63);
+    color: rgb(0, 0, 0);
 }
 .spotlight-list::first-line{
     background-color: black;
@@ -231,6 +231,7 @@ section {
 #weather figcaption{
     text-transform: capitalize;
     padding: 4px;
+    color: black;
 }
 
 #weather h4, #sportlight-1 h4, #news h4, 
@@ -253,6 +254,9 @@ section {
     margin-bottom: 10px;
     background-color:  #478;
     color: white;
+}
+#news p {
+    color: #000;
 }
 #odusec {
     grid-column: 1/4;
@@ -362,14 +366,18 @@ padding-top: 15px;
     display: none;
 }
 
-#copyright, #currentyear, #lastModified, #footer-nav span{
+#copyright, #footer-nav span{
     font-size: 7px;
+    color: #000000;
+}
+#currentyear, #lastModified{
+    color: #000000;
 }
 #footer-nav {
     display: flex;
     border: 2px solid #1234;
     gap: 20%;
-    background-color: #478;
+    background-color: rgb(255, 255, 255);
     margin-right: 2px;
     margin-left: 2px;
     padding: 10px;
@@ -388,7 +396,7 @@ padding-top: 15px;
 #footing-links nav{
     display: none;
     padding: .5px;
-    background-color: #478;
+    background-color: rgb(0, 96, 129);
 }
 #lastM{
     float: right;
@@ -396,7 +404,7 @@ padding-top: 15px;
     margin-top: 7px;
 }
 #lastModified {
-    color: white;
+    color: #f6f6f6;
 }
 
 main img {

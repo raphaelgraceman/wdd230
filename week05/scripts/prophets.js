@@ -1,4 +1,4 @@
-const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
+const url = "week05/prophet.json";
 
 //get HTML content with the ID of cards
 const cards = document.querySelector('#cards');
@@ -50,3 +50,7 @@ const displayProphets = (prophets) => {
      cards.appendChild(card);
     }); // end of arrow function and forEach loop
 }
+
+
+
+

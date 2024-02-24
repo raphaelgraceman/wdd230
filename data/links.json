@@ -4,15 +4,15 @@
             "week": "week 1",
             "links": [
                 {
-                    "url": "./week1/holygrail.html",
+                    "url": "/week1/holygrail.html",
                     "title": "Holygrail"
                 },
                 {
-                    "url": "./week1/wireframe.html",
+                    "url": "/week1/wireframe.html",
                     "title": "Wireframe"
                 },
                 {
-                    "url": "./week1/chamber-site-plan.html",
+                    "url": "/week1/chamber-site-plan.html",
                     "title": "Chamber Site Plan"
                 }
             ]
@@ -22,7 +22,7 @@
             "week": "week 2",
             "links": [
                 {
-                    "url": "./chamber/index.html",
+                    "url": "/chamber/index.html",
                     "title": "Chamber"
                 }
             ]
@@ -32,15 +32,15 @@
             "week": "week 3",
             "links": [
                 {
-                    "url": "./week03/images/landscape-nice.webp",
+                    "url": "/week03/images/landscape-nice.webp",
                     "title": "Webp"
                 },
                 {
-                    "url": "./week03/lazyload.html",
+                    "url": "/week03/lazyload.html",
                     "title": "Lazy Loading"
                 },
                 {
-                    "url": "./week03/responsive-images.html",
+                    "url": "/week03/responsive-images.html",
                     "title": "Responsive Image"
                 }
             ]
@@ -50,20 +50,20 @@
             "week": "week 4",
             "links": [
                 {
-                    "url": "./week04/tablebuild.html",
+                    "url": "/week04/tablebuild.html",
                     "title": "Tables"
             
                 },
                 {
-                    "url": "./week04/forms.html",
+                    "url": "/week04/forms.html",
                     "title": "Forms"
                 },
                 {
-                    "url": "./form.html",
+                    "url": "/form.html",
                     "title": "Teams Forms   |"
                 },
                 {
-                    "url": "./chamber/join.htnl",
+                    "url": "/chamber/join.htnl",
                     "title": "Join"
                 }
             ]
@@ -73,15 +73,15 @@
             "week": "week 5",
             "links": [
                 {
-                    "url": "./week05/prophets.html",
+                    "url": "/week05/prophets.html",
                     "title": "The Fetch API"
                 },
                 {
-                    "url": "./week05/weather.html",
+                    "url": "/week05/weather.html",
                     "title": "Weather"
                 },
                 {
-                    "url": "./chamber/directory.html",
+                    "url": "/chamber/directory.html",
                     "title": "Directory"
                 }
             ]

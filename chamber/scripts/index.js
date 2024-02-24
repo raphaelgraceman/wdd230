@@ -72,8 +72,8 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
   // Set a timeout to change the text after 3 seconds (3000 milliseconds)
   setTimeout(() => document.getElementById("visit-parag").style.textAlign = "center");
-  setTimeout(() => document.getElementById("visit-parag").style.color = "#181515", 3000);
-  setTimeout(() => document.getElementById("visit-parag").style.background = "Red", 3000);
+  setTimeout(() => document.getElementById("visit-parag").style.color = "rgb(52 0 0)", 3000);
+  setTimeout(() => document.getElementById("visit-parag").style.background = "white", 3000);
   setTimeout(() => document.getElementById("visit-parag").innerText = "Keep exploring the Chamber for your exploits!", 10000);
   setTimeout(() => document.getElementById("visit-parag").innerText = "", 3000);
 
@@ -125,23 +125,10 @@ async function apiFetch() {
 // Invoke the Function
 apiFetch();
 
-
-//Chamber Home Page Banner
-
-// Display the banner only on Mondays, Tuesdays, and Wednesdays
-if (dayName >= 1 && dayName <= 3) {
-	document.getElementById("banner").style.display = "block";
-}
-
-// Function to close the banner
-function closeBanner() {
-	document.getElementById("banner").style.display = "none";
-}
-
         
 //Sportlight Advertisement
 fetch("data/members.json")
-.then(response => response.json())
+
 .then(data => {
   const members = data.members;
   const qualifiedMembers = members.filter(member => member.membershipLevel === "Silver" || member.membershipLevel === "Gold");
@@ -207,5 +194,4 @@ fetch("data/members.json")
 
 
 
-//cookies
-document.cookie = "cookieName=cookieValue; SameSite=Lax; Secure";
+

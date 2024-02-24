@@ -1,7 +1,7 @@
 // links.js
 
-// Define the base URL
-const baseURL = "https://github.com/raphaelgraceman/wdd230";
+// The base URL
+const baseURL = "https://raphaelgraceman.github.io/wdd230/";
 
 // my githubio link
 const linksURL = "https://raphaelgraceman.github.io/wdd230/data/links.json";
@@ -29,7 +29,7 @@ function displayLinks(weeks) {
       linksList.style.display = "flex"; // display to flex
       linksList.style.listStyle = "none"; // Remove list style
       linksList.style.textDecoration = "underline"; // Underline text
-      linksList.style.color = "blue"; // Change the text color to blue
+      linksList.style.color = "black"; // Change the text color to blue
   
       week.links.forEach((link, index) => {
         const linkItem = document.createElement("div");
