@@ -192,6 +192,11 @@ fetch("data/members.json")
 
 });
 
+//donation
+setTimeout(() => document.getElementById("donate").style.textAlign = "center");
+setTimeout(() => document.getElementById("donate").style.background = "blue", 6000);
+
+
 
 
 
