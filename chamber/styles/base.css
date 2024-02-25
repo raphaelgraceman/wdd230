@@ -175,7 +175,9 @@ h3{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-
+#visit-parag {
+    margin-top: 100px;
+}
 /* Main styling */
 #hero-image img {
     width: 100%;
