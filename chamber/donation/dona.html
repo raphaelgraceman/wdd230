@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to the Chamber</title>
+</head>
+<body>
+    <style>
+        main{
+            text-align: center;
+        }
+    </style>
+    <label for="name">Name on Card:</label>
+    <input type="text" id="name" placeholder="John Doe"><br><br>
+
+    <label for="cardNumber">Card Number:</label>
+    <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456"><br><br>
+
+    <label for="expiry">Expiry Date:</label>
+    <input type="text" id="expiry" placeholder="MM/YY"><br><br>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" placeholder="123"><br><br>
+
+    <button onclick="donate()">Donate</button>
+
+    <script>
+        function donate() {
+        var name = document.getElementById("name").value;
+        var cardNumber = document.getElementById("cardNumber").value;
+        var expiry = document.getElementById("expiry").value;
+        var cvv = document.getElementById("cvv").value;
+        
+        // Validate card number
+        if (cardNumber.length !== 16 || isNaN(cardNumber)) {
+            alert("Please enter a valid 16-digit card number.");
+            return;
+        }
+        
+        // Validate expiry date
+        if (expiry.length !== 5 || !expiry.includes("/") || isNaN(expiry.slice(0, 2)) || isNaN(expiry.slice(3))) {
+            alert("Please enter a valid expiry date in MM/YY format.");
+            return;
+        }
+        
+        // Validate CVV
+        if (cvv.length !== 3 || isNaN(cvv)) {
+            alert("Please enter a valid 3-digit CVV.");
+            return;
+        }
+        
+        // Process donation (dummy code)
+        // You can replace this with actual donation processing logic
+        alert("Thank you for your donation of $100.");
+    }
+
+    </script>
+
+</body>
+</html>
