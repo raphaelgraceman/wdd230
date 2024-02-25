@@ -176,7 +176,14 @@
         text-align: center;
         padding: 5px;
     }
+    #fig{
+        margin-top: 80px;
+        border: 1px solid rgb(160, 144, 144);
+        background-color: #478;
+        height: 25%;
+    }
     #fig img {
+        margin-top: 20px;
         width: 76px;
         height: 72px;
         border: none;

@@ -163,13 +163,12 @@ h3{
     grid-column: 1/4;
     grid-row: 4;
     border: 2px solid black;
-    color: rgb(167, 29, 29);
     text-align: center;
     padding: 3px;
     width: fit-content;
     margin-top: 120px;
     border-radius: 12px;
-    background-color: rgb(249, 215, 215);
+    background-color: rgb(16, 6, 6);
 }
 #donate a {
     color: rgb(255, 255, 255);
@@ -238,24 +237,28 @@ section {
 }
 #fig{
     display: flex;
-    margin-top: 10px;
     font-size: 13px;
+    background-color: cadetblue;
+    height: 88%;
 }
 #fig img {
     width: 26px;
     height: 23px;
     border: none;
     border-radius: 15px;
+    margin-top: 35px;
 }
  #current-temp, #fah{
     padding: 3px;
     color: black;
+    margin-top: 38px;
 }
 
 #weather figcaption{
     text-transform: capitalize;
     padding: 4px;
     color: black;
+    margin-top: 38px;
 }
 
 #weather h4, #sportlight-1 h4, #news h4, 

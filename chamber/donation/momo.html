@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Support Our Cause - Donate Now</h1>
+    
+    <form action="process_donation.php" method="post">
+        <label for="amount">Donation Amount:</label>
+        <input type="text" id="amount" name="amount" placeholder="Enter donation amount" required><br>
+        
+        <input type="hidden" name="currency" value="NGN">
+        <input type="hidden" name="payment_method" value="momo">
+        <input type="hidden" name="redirect_url" value="thankYou-momo.html">
+        
+        <button type="submit">Donate via MTN Mobile Money</button>
+    </form>
+</body>
+</html>
