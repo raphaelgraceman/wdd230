@@ -182,6 +182,26 @@ h3{
     width: 100%;
     height: 100%;
 }
+.ceo-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .ceo-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .ceo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
 
 #temple h4{
     position: absolute;
